@@ -2,9 +2,17 @@
 	font-family: var(--font-secondary);
 	font-style: normal;
 	margin: 0;
+	&--huge {
+		font-size: 46px;
+	}
+	&--big {
+		font-size: 32px;
+	}
 	&--large {
-		font-size: responsive 20px 24px;
-		font-range: 576px 1600px;
+		font-size: 28px;
+	}
+	&--pre-large {
+		font-size: 28px;
 	}
 	&--medium {
 		font-size: 20px;
@@ -21,17 +29,14 @@
 	&--primary {
 		color: var(--primary-font-color);
 	}
-	&--secondary {
+	&--white {
 		color: var(--secondary-font-color);
-	}
-	&--subtext {
-		color: var(--subtext-font-color);
 	}
 	&--w-regular {
 		font-weight: normal;
 	}
-	&--w-semibold {
-		font-weight: 600;
+	&--w-medium {
+		font-weight: 500;
 	}
 	&--w-bold {
 		font-weight: 700;

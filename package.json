@@ -1,5 +1,5 @@
 {
-	"name": "base-template",
+	"name": "pro-bono",
 	"version": "1.0.0",
 	"author": "Georgii Filipov",
 	"license": "ISC",
@@ -59,15 +59,14 @@
 		"filepond-plugin-file-validate-type": "^1.2.9",
 		"hystmodal": "^1.0.1",
 		"jquery": "^3.7.1",
-		"slim-select": "^2.9.2",
-		"swiper": "^11.0.6"
+		"slim-select": "^2.9.2"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+ssh://git@github.com/flashgrinder/base-template.git"
+		"url": "git+ssh://git@github.com/flashgrinder/pro-bono.git"
 	},
 	"bugs": {
-		"url": "https://github.com/flashgrinder/base-template/issues"
+		"url": "https://github.com/flashgrinder/pro-bono/issues"
 	},
-	"homepage": "https://github.com/flashgrinder/base-template#readme"
+	"homepage": "https://github.com/flashgrinder/pro-bono#readme"
 }

@@ -1,5 +1,5 @@
 .wysiwyg {
-  font-family: var(--font-main);
+  font-family: var(--font-secondary);
   color: var(--primary-font-color);
   font-size: responsive 20px 24px;
   font-range: 576px 1024px;
@@ -17,11 +17,11 @@
 }
 
 .wysiwyg h2 {
-  @extend .title--large
+  font-size: 32px;
 }
 
 .wysiwyg h3 {
-  @extend .title--small
+  font-size: 24px;
 }
 
 .wysiwyg h4 {
@@ -29,7 +29,7 @@
 }
 
 .wysiwyg h5 {
-  @extend .text--normal
+  font-size: 20px;
 }
 
 .wysiwyg ul,
@@ -37,7 +37,7 @@
   padding-left: 30px;
   font-weight: 400;
   margin-left: 0;
-  @extend .text--large;
+  font-size: 20px;
   @include mobile {
     font-size: 14px;
   }
@@ -79,7 +79,7 @@
 .wysiwyg p {
   font-weight: 400;
   line-height: 32px;
-  @extend .text--large;
+  font-size: 20px;
   @include mobile {
     font-size: 14px;
     line-height: 16px;
@@ -100,46 +100,10 @@
 
 .wysiwyg a {
   text-decoration: underline;
-  color: var(--color-gray-600);
+  color: var(--red-font-color);
   transition: color ease .2s;
 }
 
 .wysiwyg a:hover {
-  color: var(--primary);
-}
-
-/* About and Wysiwyg-news*/
-.wysiwyg.wysiwyg--about p,
-.wysiwyg.wysiwyg--news p {
-  font-weight: 400;
-  line-height: 32px;
-  @extend .text--large;
-  @include mobile {
-    font-size: 16px;
-    line-height: 20px;
-  }
-}
-
-.wysiwyg.wysiwyg--about p + p,
-.wysiwyg.wysiwyg--news p + p {
-  margin-top: 24px;
-}
-
-/* Industry-detail */
-.wysiwyg.wysiwyg--industry-detail p {
-  @include mobile {
-    font-size: 16px;
-    line-height: 20px;
-    margin: 15px 0;
-  }
-}
-
-/* Accordion */
-.wysiwyg.wysiwyg--accordion p {
-    font-size: 20px;
-    line-height: 24px;
-}
-
-.wysiwyg.wysiwyg--accordion p + p {
-  margin-top: 16px;
+  color: var(--secondary-pressed);
 }

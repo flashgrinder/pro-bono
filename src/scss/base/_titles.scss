@@ -2,42 +2,20 @@
 	font-family: var(--font-main);
 	font-style: normal;
 	margin: 0;
-	&--extra-huge {
-		font-size: responsive 48px 120px;
-		font-range: 375px 1600px;
-	}
-	&--huge {
-		font-size: responsive 48px 64px;
-		font-range: 375px 1600px;
-	}
 	&--big {
-		font-size: responsive 32px 48px;
-		font-range: 375px 1600px;
+		font-size: 64px;
 	}
-	&--large {
-		font-size: responsive 24px 28px;
-		font-range: 375px 1600px;
-	}
-	&--medium {
-		font-family: var(--font-secondary);
-		font-size: responsive 20px 24px;
-		font-range: 375px 1600px;
-	}
-	&--small {
-		font-family: var(--font-secondary);
+	&--normal {
 		font-size: 20px;
 	}
 	&--primary {
 		color: var(--primary-font-color);
 	}
-	&--secondary {
-		color: var(--secondary-font-color);
+	&--white {
+		color: var(--white-font-color);
 	}
-	&--subtext {
-		color: var(--subtext-font-color);
-	}
-	&--w-semibold {
-		font-weight: 600;
+	&--w-medium {
+		font-weight: 500;
 	}
 	&--w-bold {
 		font-weight: 700;
@@ -48,8 +26,5 @@
 }
 
 .title--indent {
-	margin-bottom: 48px;
-	@include mobile {
-		margin-bottom: 24px;
-	}
+	margin-bottom: 60px;
 }

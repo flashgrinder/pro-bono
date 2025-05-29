@@ -11,9 +11,9 @@ html {
 
 body {
 	position: relative;
-	background-color: var(--primary-bg);
+	background-color: var(--gray-bg);
 	color: var(--primary-font-color);
-	font-family: var(--font-main);
+	font-family: var(--font-secondary);
 	overflow-x: hidden;
 }
 
@@ -22,7 +22,7 @@ img {
 }
 
 a {
-	color: var(--secondary-font-color);
+	color: var(--red-font-color);
 }
 
 code {

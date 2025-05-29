@@ -1,20 +1,19 @@
 :root {
-	--container-width: 1312px;
+	--container-width: 1920px;
 	--container-width-1600: 1630px;
 	--container-padding: 16px;
 
-	--font-main: Tektur, sans-serif;
-	--font-secondary: Gilroy, sans-serif;
+	--font-main: Gilroy, sans-serif;
+	--font-secondary: Helvetica Neue, sans-serif;
 
 	/* Brand Colors */
-	--primary: #F48A0B;
-	--secondary: #16161C;
+	--primary: #E3000F;
+	--secondary: #313130;
 	/* State Colors */
 	--primary-hover: #E3820D;
 	--primary-pressed: #F48A0B;
 	--disabled: #ECEFF1;
-	--secondary-hover: #D30A21;
-	--secondary-pressed: #A9081A;
+	--secondary-hover: #C3231B;
 	/* Input Colors */
 	--normal: #FFFFFF;
 	--success: #E9F1E4;
@@ -25,22 +24,20 @@
 	--success-border: #699E4A;
 	--error-border: #D1493F;
 	/* Background Colors */
-	--primary-bg: #FFFFFF;
-	--secondary-bg: #ECEFF180;
-	--secondary-bg-2: #ECEFF1;
-	--dark-bg: #16161C;
-	--blue-gray-bg: #CFD8DC;
+	--white-bg: #FFFFFF;
+	--dark-bg: #313130;
+	--gray-bg: #F5F5F5;
 	/* Font Colors */
-	--primary-font-color: #16161C;
-	--secondary-font-color: #607D8B;
-	--subtext-font-color: #B0BEC5;
+	--primary-font-color: #313130;
+	--secondary-font-color: #3131304D;
+	--red-font-color: #E3000F;
+	--white-font-color: #FFFFFF;
 	/* Shadows */
 	--small-shadow: 0px 3px 10px 0px #8585851A;
 	--big-shadow: 0px 10px 50px 0px #8585850D;
 
-	--padding-block-48: 48px 0;
-	--padding-block-80: 80px 0;
-	--padding-block-120: 120px 0;
+	--padding-block-70: 70px 0;
+	--padding-block-140: 140px 0 0;
 
     --laptop-size: 1199px;
 	--tablet-size: 1024px;
