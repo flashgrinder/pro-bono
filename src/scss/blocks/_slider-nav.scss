@@ -1,9 +1,9 @@
 .slider-nav .slider-nav__splide-arrow {
-  border-radius: 0;
-  background-color: transparent;
+  background-color: #FFFFFF4D;
   opacity: 1;
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
+  backdrop-filter: blur(15px);
 }
 
 .slider-nav .slider-nav__arrow-icon {
@@ -18,14 +18,14 @@
 }
 
 .slider-nav__splide-arrow--prev.splide__arrow--prev {
-  left: -40px;
+  left: 40px;
   @include to(1200px) {
     left: -25px;
   }
 }
 
 .slider-nav__splide-arrow--next.splide__arrow--next {
-  right: -40px;
+  right: 40px;
   @include to(1200px) {
     right: -25px;
   }

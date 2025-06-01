@@ -1,26 +1,64 @@
 .footer {
-	background-color: rgb(39, 39, 39);
-	padding: 50px 0;
-	font-size: 32px;
-    color: #fff;
 
-	h1 {
-		font-size: 32px;
-	}
+}
 
-	a {
-		// color: var(--link-color);
-		color: #fff;
-		text-decoration: underline;
-	}
+.footer__body {
+	border-radius: 40px 40px 0 0;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
 
-	@media (max-width: 1200px) {
-		font-size: 26px;
-	}
+.footer__top {
+	padding-bottom: 60px;
+	border-bottom: 1px solid rgba(197, 197, 197, 0.5);
+}
+
+.footer__contacts {
+	gap: 100px;
+}
+
+.footer__contact-name {
+	opacity: .6;
+}
+
+.footer__contact-name {
+	margin-bottom: 14px;
+}
+
+.footer__center {
+	padding-top: 60px;
+}
+
+.footer__logos {
+	gap: 40px;
+}
+
+.footer__menu-item {
+	padding: 10px 12px 8px;
+}
+
+.footer__menu-link {
+	color: var(--primary-font-color);
+	padding-bottom: 2px;
+	border-bottom: 1px solid transparent;
+	transition: border var(--hover-time) linear,
+				color var(--hover-time) linear;
+}
+
+.footer__menu-link:hover {
+	color: var(--primary);
+	border-bottom: 1px solid var(--primary);
+}
+
+.footer__actions {
+	gap: 28px;
+}
+
+.footer__bottom {
+	padding-top: 60px;
 }
 
 .footer__copyright {
 	padding: 10px 0;
-	font-size: 16px;
-
+	opacity: .6;
 }

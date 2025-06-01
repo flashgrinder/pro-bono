@@ -1,0 +1,50 @@
+.news__splide.splide.is-initialized:not(.is-active) .splide__list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: 20px;
+}
+
+.news__item {
+	padding: 10px;
+	background-color: var(--white-bg);
+	border-radius: 40px;
+}
+
+.news__item-pic {
+	position: relative;
+	border-radius: 30px;
+	overflow: hidden;
+}
+
+.news__item-pic picture,
+.news__item-pic img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.news__item-tag.tag {
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	padding: 10px;
+	font-size: 12px;
+}
+
+.news__item-excerpt {
+	opacity: .7;
+}
+
+.news__item-excerpt,
+.news__item-more {
+	margin-top: 20px;
+}
+
+.news__item-info {
+	padding: 20px;
+}
+
+.news__actions {
+	margin-top: 60px;
+}

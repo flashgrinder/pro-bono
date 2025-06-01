@@ -1,0 +1,11 @@
+.tag {
+	border-radius: 55px;
+	font-size: 16px;
+	font-weight: normal;
+	padding: 19px 20px;
+	background-color: var(--white-bg);
+}
+
+.tag.is-active {
+	color: var(--primary);
+}

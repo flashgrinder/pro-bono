@@ -1,0 +1,39 @@
+.info__decor-wrap {
+	margin-bottom: 60px;
+}
+
+.info__decor-icon {
+	--arrow-btn-top-right: #313130;
+}
+
+.info__decor {
+	position: relative;
+	border-radius: 50%;
+	border: 1px solid var(--normal-border);
+	height: 60px;
+	width: 60px;
+	min-width: 60px;
+}
+
+.info-decor__line {
+	width: 100%;
+	height: 1px;
+	background-image: linear-gradient(270deg, #FFFFFF 0%, #C5C5C5 100%);
+}
+
+.info-decor__line--left {
+	transform: rotate(-180deg);
+}
+
+.info__heading {
+	color: #3131304D;
+	line-height: 1;
+}
+
+.info__heading span {
+	color: var(--primary-font-color);
+}
+
+.info__actions {
+	margin-top: 88px;
+}

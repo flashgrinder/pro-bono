@@ -1,6 +1,6 @@
 @@include('blocks/header.html')
 
-<section class="dashbord" style="margin: 100px auto;max-width: 1024px;background: #ffffff;padding: 100px 0">
+<section class="dashbord" style="margin: 100px auto;max-width: 1024px;background: #ffffff;padding: 100px 0;display: none">
     <button class="button button--primary">
         <span>Скачать документ</span>
         <span class="button__icon-wrap">
@@ -25,6 +25,497 @@
             </svg>
         </span>
     </button>
+</section>
+
+<section class="main-screen">
+    <div class="main-screen__body container-full">
+        <div class="main-screen__splide splide js-main-screen-slider">
+            <div class="main-screen__splide-track splide__track">
+                <div class="main-screen__splide-list splide__list">
+                    <div class="main-screen__splide-slide splide__slide">
+                        <div class="main-screen__pic">
+                            <picture>
+                                <img src="./img/other/main-screen-1.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="main-screen__inner-slide container d-flex flex-justify-sb">
+                            <div class="main-screen__info">
+                                <div class="main-screen__info-title text text--white text--w-bold">
+                                    Признание и поощрение лучших экспертов
+                                </div>
+                                <div class="main-screen__info-description text text--medium text--white text--w-medium">
+                                    Активно занимающихся Pro bono деятельностью, оказывающих Уполномоченному по защите
+                                    прав предпринимателей в г.Москве содействие в полном, всестороннем и объективном рассмотрении обращений предпринимателей и реализации предложений по совершенствованию законодательства в сфере предпринимательства
+                                </div>
+                            </div>
+                            <div class="main-screen__actions">
+                                <button class="button button--secondary" data-hystmodal="#feedback">
+                                    <span>Как подать заявку</span>
+                                    <span class="button__icon-wrap">
+                                        <svg width="14" height="14" class="button__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-screen__splide-slide splide__slide">
+                        <div class="main-screen__pic">
+                            <picture>
+                                <img src="./img/other/main-screen-1.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="main-screen__inner-slide container d-flex flex-justify-sb">
+                            <div class="main-screen__info">
+                                <div class="main-screen__info-title text text--white text--w-bold">
+                                    Признание и поощрение лучших экспертов
+                                </div>
+                                <div class="main-screen__info-description text text--medium text--white text--w-medium">
+                                    Активно занимающихся Pro bono деятельностью, оказывающих Уполномоченному по защите
+                                    прав предпринимателей в г.Москве содействие в полном, всестороннем и объективном рассмотрении обращений предпринимателей и реализации предложений по совершенствованию законодательства в сфере предпринимательства
+                                </div>
+                            </div>
+                            <div class="main-screen__actions">
+                                <button class="button button--secondary" data-hystmodal="#feedback">
+                                    <span>Как подать заявку</span>
+                                    <span class="button__icon-wrap">
+                                        <svg width="14" height="14" class="button__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav splide__arrows">
+                <button class="slider-nav__splide-arrow slider-nav__splide-arrow--prev splide__arrow splide__arrow--prev">
+                    <svg class="slider-nav__arrow-icon" width="24px" height="24px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-left"></use>
+                    </svg>
+                </button>
+                <button class="slider-nav__splide-arrow slider-nav__splide-arrow--next splide__arrow splide__arrow--next">
+                    <svg class="slider-nav__arrow-icon" width="24px" height="24px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="conditions">
+    <div class="conditions__outer container-full">
+        <div class="conditions__body container white-bg">
+            <h3 class="conditions__heading title title--big title--primary title--w-bold title--indent">
+                Условия участия в Рейтинге
+            </h3>
+            <p class="conditions__subtitle text text--medium text--primary text--w-regular">
+                Для участия в рейтинге вам необходимо обязательно выполнить 2 пункта
+            </p>
+            <div class="conditions__items">
+                <div class="conditions__item gray-bg">
+                    <div class="conditions__item-top d-flex">
+                        <div class="conditions__icon d-flex flex-align-center flex-justify-center">
+                            <svg width="24px" height="24px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#book"></use>
+                            </svg>
+                        </div>
+                        <div class="conditions__number text text--pre-large text--primary text--w-regular d-flex flex-align-center flex-justify-center">
+                            01
+                        </div>
+                    </div>
+                    <div class="conditions__item-info">
+                        <div class="conditions__item-title text text--large text--primary text--w-bold">
+                            Статус “pro bono”
+                        </div>
+                        <div class="conditions__item-description text text--medium text--primary text--w-regular">
+                            Действующие эксперты, заключившие с Уполномоченным Соглашения Pro bono, занимающиеся оказанием консультационной, экспертной и иной помощи на безвозмездной основе: адвокаты, юристы, преподаватели вузов, экономисты, финансисты, оценщики, арбитражные управляющие, иные лица, обладающие соответствующими экспертными познания
+                        </div>
+                    </div>
+                </div>
+                <div class="conditions__item gray-bg">
+                    <div class="conditions__item-top d-flex">
+                        <div class="conditions__icon d-flex flex-align-center flex-justify-center">
+                            <svg width="24px" height="24px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#anketa"></use>
+                            </svg>
+                        </div>
+                        <div class="conditions__number text text--pre-large text--primary text--w-regular d-flex flex-align-center flex-justify-center">
+                            02
+                        </div>
+                    </div>
+                    <div class="conditions__item-info">
+                        <div class="conditions__item-title text text--large text--primary text--w-bold">
+                            Анкета участника
+                        </div>
+                        <div class="conditions__item-description text text--medium text--primary text--w-regular">
+                            Анкета заполняется в электронной форме в соответствии с Положением о проведении ежегодного рейтинга деятельности экспертов pro bono Уполномоченного по защите прав предпринимателей в городе Москве PRO BONO - 300. (Электронные анкеты на сервисе Yandex Forms по ссылке, опубликованной на сайте рейтинга и официальных информационных ресурсах Уполномоченного)
+                        </div>
+                    </div>
+                </div>
+                <div class="conditions__item dark-bg">
+                    <div class="conditions__item-top d-flex">
+                        <div class="conditions__icon d-flex flex-align-center flex-justify-center">
+                            <svg width="24px" height="24px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#status"></use>
+                            </svg>
+                        </div>
+                        <div class="conditions__number text text--pre-large text--white text--w-regular d-flex flex-align-center flex-justify-center">
+                            03
+                        </div>
+                    </div>
+                    <div class="conditions__item-info">
+                        <div class="conditions__item-title text text--large text--white text--w-bold">
+                            Количество анкет
+                        </div>
+                        <div class="conditions__item-description text text--medium text--white text--w-regular">
+                            Количество направляемых анкет не ограничено
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="criteria">
+    <div class="criteria__outer container-full">
+        <div class="criteria__body container white-bg">
+            <h3 class="criteria__heading title title--big title--primary title--w-bold title--indent">
+                Критерии оценки
+            </h3>
+            <p class="criteria__subtitle text text--medium text--primary text--w-regular">
+                Анализ и оценку поступивших анкет осуществляет Экспертный совет в соответствии с Регламентом (раздел
+                8 настоящего Положения). Персональный состав которого определяется Уполномоченным
+                <br>
+                <br>
+                Период, в рамках которого оценивается деятельность эксперта, составляет 1 (один) календарный год с 20
+                июня года, предшествующего году проведения Рейтинга
+            </p>
+            <div class="criteria__doc gray-bg d-flex flex-align-center flex-justify-sb">
+                <div class="criteria__doc-inner d-flex flex-align-center">
+                    <div class="criteria__doc-icon d-flex flex-align-center flex-justify-center">
+                        <svg width="24" height="24">
+                            <use href="./img/svgsprite/sprite.symbol.svg#docx"></use>
+                        </svg>
+                    </div>
+                    <div class="criteria__doc-name text text--medium text--primary text--w-regular">
+                        Регламент критерии оценки (положение).docx
+                    </div>
+                </div>
+                <a class="button button--primary" download>
+                    <span>Скачать документ</span>
+                    <span class="button__icon-wrap">
+                        <svg width="14" height="14" class="button__icon">
+                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+            <div class="criteria__info">
+                <div class="criteria__info-title text text--medium text--primary text--w-regular">
+                    Критерии оценки:
+                </div>
+                <div class="criteria__items">
+                    <div class="criteria__item d-flex gray-bg">
+                        <div class="criteria__item-num text text--medium text--primary text--w-regular d-flex flex-justify-center flex-align-center">
+                            1
+                        </div>
+                        <div class="criteria__item-info">
+                            <div class="criteria__item-title text text--medium text--primary text--w-medium">
+                                Профессиональная деятельность
+                            </div>
+                            <ul class="criteria__item-list text text--medium text--primary text--w-regular">
+                                <li class="criteria__item-point">
+                                    Проведение экспертиз по жалобам предпринимателей на нарушения прав и законных интересов.
+                                </li>
+                                <li class="criteria__item-point">
+                                    Проведение экспертиз, связанных с законотворческой деятельностью.
+                                </li>
+                                <li class="criteria__item-point">
+                                    Подготовка проектов НПА, мотивированных предложений по совершенствованию законодательства.
+                                </li>
+                                <li class="criteria__item-point">
+                                    Участие в подготовке заключений по ОФВ, ОРВ.
+                                </li>
+                                <li class="criteria__item-point">
+                                    Активность в Экосистеме Уполномоченного:
+                                </li>
+                                <li class="criteria__item-point">
+                                    Участие в работе Советов, Центров, Рабочих групп, Общественных приемных при Уполномоченном.
+                                </li>
+                                <li class="criteria__item-point">
+                                    Участие в мероприятиях Уполномоченного (форумы, бизнес-завтраки).
+                                </li>
+                                <li class="criteria__item-point">
+                                    Участие в совместных приемах с прокурорами административных округов Москвы.
+                                </li>
+                                <li class="criteria__item-point">
+                                    Участие в посещении предпринимателей, находящихся в СИЗО.
+                                </li>
+                                <li class="criteria__item-point">
+                                    Участие в проектах Уполномоченного (волонтерство, МШЮ).
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="criteria__item d-flex gray-bg">
+                        <div class="criteria__item-num text text--medium text--primary text--w-regular d-flex flex-justify-center flex-align-center">
+                            2
+                        </div>
+                        <div class="criteria__item-info">
+                            <div class="criteria__item-title text text--medium text--primary text--w-medium">
+                                Внешняя активность
+                            </div>
+                            <ul class="criteria__item-list text text--medium text--primary text--w-regular">
+                                <li class="criteria__item-point">
+                                    Участие от имени Уполномоченного в публичных мероприятиях (съездах, конференциях,
+                                    форумах, круглых столах).
+                                </li>
+                                <li class="criteria__item-point">
+                                    Участие от имени Уполномоченного в заседаниях Госдумы, Совета Федерации, в
+                                    Общественных и экспертных советах ОИВ.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="criteria__item d-flex gray-bg">
+                        <div class="criteria__item-num text text--medium text--primary text--w-regular d-flex flex-justify-center flex-align-center">
+                            3
+                        </div>
+                        <div class="criteria__item-info">
+                            <div class="criteria__item-title text text--medium text--primary text--w-medium">
+                                Медийная активность
+                            </div>
+                            <ul class="criteria__item-list text text--medium text--primary text--w-regular">
+                                <li class="criteria__item-point">
+                                    Упоминание в СМИ, в связи с деятельностью в Экосистеме Уполномоченного.
+                                </li>
+                                <li class="criteria__item-point">
+                                    Упоминание в СМИ, в связи с собственной профессиональной деятельностью.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="criteria__item d-flex gray-bg">
+                        <div class="criteria__item-num text text--medium text--primary text--w-regular d-flex flex-justify-center flex-align-center">
+                            4
+                        </div>
+                        <div class="criteria__item-info">
+                            <div class="criteria__item-title text text--medium text--primary text--w-medium">
+                                Другое, не связанное с деятельностью в Экосистеме
+                            </div>
+                            <ul class="criteria__item-list text text--medium text--primary text--w-regular">
+                                <li class="criteria__item-point">
+                                    Наличие ученой степени (звания).
+                                </li>
+                                <li class="criteria__item-point">
+                                    Участие в судах (защита прав и законных интересов предпринимателей).
+                                </li>
+                                <li class="criteria__item-point">
+                                    Преподавательская деятельность.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="info b-padding-70">
+    <div class="info__body container">
+        <div class="info__decor-wrap d-flex flex-justify-center flex-align-center">
+            <span class="info-decor__line info-decor__line--left"></span>
+            <div class="info__decor d-flex flex-justify-center flex-align-center">
+                <svg width="20" height="20" class="info__decor-icon">
+                    <use href="./img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+                </svg>
+            </div>
+            <span class="info-decor__line"></span>
+        </div>
+        <h3 class="info__heading title title--big title--w-bold text-center">
+            <span>По итогам оценки</span> представленных заявок <br> <span>Экспертный совет выбирает
+            <i>3 победителей</i></span> <br> из участников Рейтинга в каждой из номинаций
+        </h3>
+    </div>
+</section>
+
+<section class="info b-padding-70">
+    <div class="info__body container">
+        <div class="info__decor-wrap d-flex flex-justify-center flex-align-center">
+            <span class="info-decor__line info-decor__line--left"></span>
+            <div class="info__decor d-flex flex-justify-center flex-align-center">
+                <svg width="20" height="20" class="info__decor-icon">
+                    <use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+                </svg>
+            </div>
+            <span class="info-decor__line"></span>
+        </div>
+        <h3 class="info__heading title title--big title--w-bold text-center">
+            <span>Результаты</span> рейтинга будут <br> опубликованы <span><i>3 сентября</i></span> <br> <i>2025 года</i>
+        </h3>
+        <div class="info__actions d-flex flex-justify-center">
+            <button class="button button--primary">
+                <span>Подать заявку</span>
+                <span class="button__icon-wrap">
+                    <svg width="14" height="14" class="button__icon">
+                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+                    </svg>
+                </span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="news b-padding-70">
+    <div class="news__body container">
+        <h3 class="news__heading title title--big title--primary title--w-bold title--indent">
+            Новости
+        </h3>
+        <div class="news__items-wrap">
+            <div class="news__splide splide js-news-slider">
+                <div class="news__splide-track splide__track">
+                    <div class="news__splide-list splide__list">
+                        <div class="news__splide-slide splide__slide">
+                            <article class="news__item">
+                                <div class="news__item-pic">
+                                    <picture>
+                                        <img src="./img/other/news-1.jpg" alt="">
+                                    </picture>
+                                    <div class="news__item-tag tag">
+                                        Тег по категории новостей
+                                    </div>
+                                </div>
+                                <div class="news__item-info">
+                                    <h3 class="news__item-title text text--large text--primary text--w-bold">
+                                        Название новости
+                                    </h3>
+                                    <p class="news__item-excerpt text text--small text--primary text--w-regular">
+                                        Краткое описание новости, может быть в несколько строчек...
+                                    </p>
+                                    <div class="news__item-more">
+                                        <a href="single.html" class="button button--text">
+                                            <span>Читать полностью</span>
+                                            <span class="button__icon-wrap">
+                                                <svg width="14" height="14" class="button__icon">
+                                                    <use href="./img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="news__splide-slide splide__slide">
+                            <article class="news__item">
+                                <div class="news__item-pic">
+                                    <picture>
+                                        <img src="./img/other/news-1.jpg" alt="">
+                                    </picture>
+                                    <div class="news__item-tag tag">
+                                        Тег по категории новостей
+                                    </div>
+                                </div>
+                                <div class="news__item-info">
+                                    <h3 class="news__item-title text text--large text--primary text--w-bold">
+                                        Название новости
+                                    </h3>
+                                    <p class="news__item-excerpt text text--small text--primary text--w-regular">
+                                        Краткое описание новости, может быть в несколько строчек...
+                                    </p>
+                                    <div class="news__item-more">
+                                        <a href="single.html" class="button button--text">
+                                            <span>Читать полностью</span>
+                                            <span class="button__icon-wrap">
+                                                <svg width="14" height="14" class="button__icon">
+                                                    <use href="./img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="news__splide-slide splide__slide">
+                            <article class="news__item">
+                                <div class="news__item-pic">
+                                    <picture>
+                                        <img src="./img/other/news-1.jpg" alt="">
+                                    </picture>
+                                    <div class="news__item-tag tag">
+                                        Тег по категории новостей
+                                    </div>
+                                </div>
+                                <div class="news__item-info">
+                                    <h3 class="news__item-title text text--large text--primary text--w-bold">
+                                        Название новости
+                                    </h3>
+                                    <p class="news__item-excerpt text text--small text--primary text--w-regular">
+                                        Краткое описание новости, может быть в несколько строчек...
+                                    </p>
+                                    <div class="news__item-more">
+                                        <a href="single.html" class="button button--text">
+                                            <span>Читать полностью</span>
+                                            <span class="button__icon-wrap">
+                                                <svg width="14" height="14" class="button__icon">
+                                                    <use href="./img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="news__splide-slide splide__slide">
+                            <article class="news__item">
+                                <div class="news__item-pic">
+                                    <picture>
+                                        <img src="./img/other/news-1.jpg" alt="">
+                                    </picture>
+                                    <div class="news__item-tag tag">
+                                        Тег по категории новостей
+                                    </div>
+                                </div>
+                                <div class="news__item-info">
+                                    <h3 class="news__item-title text text--large text--primary text--w-bold">
+                                        Название новости
+                                    </h3>
+                                    <p class="news__item-excerpt text text--small text--primary text--w-regular">
+                                        Краткое описание новости, может быть в несколько строчек...
+                                    </p>
+                                    <div class="news__item-more">
+                                        <a href="single.html" class="button button--text">
+                                            <span>Читать полностью</span>
+                                            <span class="button__icon-wrap">
+                                                <svg width="14" height="14" class="button__icon">
+                                                    <use href="./img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news__actions d-flex flex-justify-center">
+            <button class="button button--primary">
+                <span>Смотреть все</span>
+                <span class="button__icon-wrap">
+                    <svg width="14" height="14" class="button__icon">
+                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+                    </svg>
+                </span>
+            </button>
+        </div>
+    </div>
 </section>
 
 @@include('blocks/footer.html')
