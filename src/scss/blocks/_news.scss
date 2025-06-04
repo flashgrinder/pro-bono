@@ -1,7 +1,20 @@
-.news__splide.splide.is-initialized:not(.is-active) .splide__list {
+.news__splide.splide.is-initialized:not(.is-active) .splide__list,
+.news__items {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 	gap: 20px;
+}
+
+.news.news--index .news__heading {
+	margin-bottom: 100px;
+}
+
+.news__tags {
+	margin-bottom: 60px;
+	gap: 10px;
+	@include tablet {
+		overflow-x: auto;
+	}
 }
 
 .news__item {

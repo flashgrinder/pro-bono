@@ -1,0 +1,45 @@
+.council__subtitle {
+	max-width: 840px;
+	margin: 0 auto;
+	opacity: .7;
+}
+
+.council__expert {
+	position: relative;
+	display: grid;
+	grid-template-columns: 200px minmax(300px, 387px);
+	align-items: center;
+	margin-top: 60px;
+	padding: 20px;
+	gap: 24px;
+	border-radius: 40px;
+}
+
+.council__expert::before {
+	content: url("../img/other/council-decor.svg");
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 60px;
+	width: 32px;
+	height: 29px;
+}
+
+.council__expert-photo {
+	border-radius: 30px;
+	overflow: hidden;
+}
+
+.council__expert-photo picture,
+.council__expert-photo img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	min-height: 200px;
+	max-height: 200px;
+	object-fit: cover;
+}
+
+.council__expert-excerpt {
+	margin-top: 24px;
+}

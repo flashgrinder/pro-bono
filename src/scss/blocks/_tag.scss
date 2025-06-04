@@ -3,7 +3,15 @@
 	font-size: 16px;
 	font-weight: normal;
 	padding: 19px 20px;
+	color: var(--primary-font-color);
 	background-color: var(--white-bg);
+	transition: color var(--hover-time) linear;
+}
+
+.tag:hover,
+.tag:target,
+.tag:focus {
+	color: var(--primary);
 }
 
 .tag.is-active {

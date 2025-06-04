@@ -1,5 +1,5 @@
 .text {
-	font-family: var(--font-secondary);
+	font-family: var(--font-main);
 	font-style: normal;
 	margin: 0;
 	&--huge {
@@ -16,6 +16,9 @@
 	}
 	&--medium {
 		font-size: 20px;
+	}
+	&--pre-medium {
+		font-size: 18px;
 	}
 	&--normal {
 		font-size: 16px;

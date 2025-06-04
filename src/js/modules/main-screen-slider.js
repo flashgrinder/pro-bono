@@ -25,7 +25,7 @@ function MyTransition( Splide, Components ) {
         const destination = Move.toPosition( index, true );
 
         // Applies the CSS transition
-        list.style.transition = 'transform 1000ms cubic-bezier(.44,.65,.07,1.01)';
+        list.style.transition = 'transform 1000ms cubic-bezier(0.42, 0, 0.58, 1)';
 
         // Moves the carousel to the destination.
         Move.translate( destination );
