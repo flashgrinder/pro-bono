@@ -18,6 +18,9 @@
   outline: var(--primary);
   background: transparent;
   transition: background .3s ease-out, color .3s ease-out, border .3s ease-out, opacity .3s ease-out, width .3s ease-out;
+  @include mobile {
+    padding: 8px 8px 8px 16px;
+  }
 }
 
 .button--primary {
@@ -26,6 +29,7 @@
   border: 1px solid transparent;
   @include mobile {
     width: 100%;
+    font-size: 16px;
   }
 }
 
@@ -122,6 +126,9 @@
   border-bottom: 1px solid #E3000F33;
   border-radius: 0;
   gap: 10px;
+  @include mobile {
+    font-size: 14px;
+  }
 }
 
 .button--text .button__icon-wrap {

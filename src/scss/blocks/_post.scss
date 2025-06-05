@@ -1,6 +1,9 @@
 .post {
 	position: relative;
 	padding: 20px 0 70px;
+	@include mobile {
+		padding: 20px 0 40px;
+	}
 }
 
 .post__back {
@@ -8,6 +11,13 @@
 	top: 44px;
 	left: 58px;
 	display: inline-block;
+	z-index: 1;
+	@include tablet {
+		left: 24px;
+	}
+	@include mobile {
+		display: none;
+	}
 }
 
 .post__back-button {
@@ -34,6 +44,9 @@
 	max-width: 890px;
 	margin: 0 auto;
 	padding: 0 var(--container-padding);
+	@include mobile {
+		--container-padding: 15px;
+	}
 }
 
 .post__meta {
@@ -66,4 +79,12 @@
 .post__title {
 	margin-top: 60px;
 	margin-bottom: 24px;
+	@include mobile {
+		font-size: 22px;
+	}
+}
+
+/* Policy */
+.post.post--policy .post__title {
+	margin-top: 0;
 }

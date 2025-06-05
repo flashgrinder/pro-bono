@@ -10,6 +10,9 @@
 	}
 	&--large {
 		font-size: 28px;
+		@include mobile {
+			font-size: 18px;
+		}
 	}
 	&--pre-large {
 		font-size: 24px;

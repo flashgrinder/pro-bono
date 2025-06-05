@@ -23,6 +23,12 @@ function newsSliderInit() {
                     perPage: 3.2,
                     gap: 10,
                 },
+                768: {
+                    perPage: 2,
+                },
+                576: {
+                    perPage: 1,
+                },
             }
         } );
 
