@@ -2,6 +2,15 @@
 	font-family: var(--font-main);
 	font-style: normal;
 	margin: 0;
+	&--huge {
+		font-size: 90px;
+		@include tablet {
+			font-size: 60px;
+		}
+		@include mobile {
+			font-size: 32px;
+		}
+	}
 	&--big {
 		font-size: 64px;
 		@include mobile {
