@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Базовый шаблон</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon.png">
+</head>
+<body>
+<!-- Убираешь класс header--dark и меняет цвета на белый -->
+<header class="header js-header-mobile header--dark">
+    <button class="mobile-nav-btn burger js-mobile-nav-burger">
+        <div class="nav-icon burger__icon"></div>
+    </button>
+</header>
+<div class="mobile-nav">
+    <ul class="mobile-nav__list">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="docs.html">Документация</a></li>
+    </ul>
+</div>
+
+<main>
+
+<section class="page-head">
+    <div class="page-head__outer container-full">
+        <div class="page-head__body container" style="background-image: url('./img/other/council-bg.png')">
+            <h1 class="page-head__heading title title--huge title--white title--w-bold">
+                Экспертный совет рейтинга
+            </h1>
+        </div>
+    </div>
+</section>
+
+<section class="council council--page b-padding-70">
+    <div class="council__body container">
+        <div class="council__expert white-bg">
+            <div class="council__expert-photo">
+                <picture>
+                    <img src="./img/other/council.png" alt="">
+                </picture>
+            </div>
+            <div class="council__expert-info">
+                <div class="council__expert-title text text--large text--primary text--w-bold">
+                    Татьяна Вадимовна Сизова
+                </div>
+                <div class="council__expert-subtitle text text--small text--primary text--w-regular">
+                    Уполномоченный по&#160;защите прав предпринимателей в&#160;городе Москве
+                </div>
+                <div class="council__expert-excerpt text text--pre-medium text--primary text--w-regular">
+                    Цитата эксперта, которая занимает примерно одно предложение. Возможно несколько строчек
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="experts b-padding-70">
+    <div class="experts__body container">
+        <h3 class="experts__heading title title--big title--primary title--w-bold title--indent text-center">
+            Экспертный совет
+        </h3>
+        <p class="experts__subtitle text text--medium text--primary text--w-regular text-center">
+            В&#160;состав Экспертного совета входят: Уполномоченный по&#160;защите прав предпринимателей в&#160;городе Москве, Представители законодательных органов, Представители юридического научного сообщества и&#160;профильные эксперты, Представители правовых департаментов организаций, Общественные деятели.
+        </p>
+        <div class="experts__items">
+            <div class="experts__item white-bg js-expert-item">
+                <div class="experts__item-pic">
+                    <picture>
+                        <img src="./img/other/council.png" alt="">
+                    </picture>
+                    <div class="experts__item-tooltip text text--tiny text--primary text--w-medium text-center">
+                        Нажмите на&#160;карточку, чтобы посмотреть цитату эксперта
+                    </div>
+                </div>
+                <div class="experts__item-info">
+                    <div class="experts__item-name text text--primary text--w-bold">
+                        Иванов Иван Иванович
+                    </div>
+                    <div class="experts__item-position text text--small text--primary text--w-regular">
+                        Уполномоченный по&#160;защите прав предпринимателей в&#160;городе Москве
+                    </div>
+                </div>
+                <div class="experts__item-phrase text text--pre-medium text--primary text--w-medium text-center">
+                    &#171;Цитата эксперта, которая занимает примерно одно предложение. Возможно несколько строчек&#187;
+                </div>
+            </div>
+            <div class="experts__item white-bg js-expert-item">
+                <div class="experts__item-pic">
+                    <picture>
+                        <img src="./img/other/council.png" alt="">
+                    </picture>
+                    <div class="experts__item-tooltip text text--tiny text--primary text--w-medium text-center">
+                        Нажмите на&#160;карточку, чтобы посмотреть цитату эксперта
+                    </div>
+                </div>
+                <div class="experts__item-info">
+                    <div class="experts__item-name text text--primary text--w-bold">
+                        Иванов Иван Иванович
+                    </div>
+                    <div class="experts__item-position text text--small text--primary text--w-regular">
+                        Уполномоченный по&#160;защите прав предпринимателей в&#160;городе Москве
+                    </div>
+                </div>
+                <div class="experts__item-phrase text text--pre-medium text--primary text--w-medium text-center">
+                    &#171;Цитата эксперта, которая занимает примерно одно предложение. Возможно несколько строчек&#187;
+                </div>
+            </div>
+            <div class="experts__item white-bg js-expert-item">
+                <div class="experts__item-pic">
+                    <picture>
+                        <img src="./img/other/council.png" alt="">
+                    </picture>
+                    <div class="experts__item-tooltip text text--tiny text--primary text--w-medium text-center">
+                        Нажмите на&#160;карточку, чтобы посмотреть цитату эксперта
+                    </div>
+                </div>
+                <div class="experts__item-info">
+                    <div class="experts__item-name text text--primary text--w-bold">
+                        Иванов Иван Иванович
+                    </div>
+                    <div class="experts__item-position text text--small text--primary text--w-regular">
+                        Уполномоченный по&#160;защите прав предпринимателей в&#160;городе Москве
+                    </div>
+                </div>
+                <div class="experts__item-phrase text text--pre-medium text--primary text--w-medium text-center">
+                    &#171;Цитата эксперта, которая занимает примерно одно предложение. Возможно несколько строчек&#187;
+                </div>
+            </div>
+            <div class="experts__item white-bg js-expert-item">
+                <div class="experts__item-pic">
+                    <picture>
+                        <img src="./img/other/council.png" alt="">
+                    </picture>
+                    <div class="experts__item-tooltip text text--tiny text--primary text--w-medium text-center">
+                        Нажмите на&#160;карточку, чтобы посмотреть цитату эксперта
+                    </div>
+                </div>
+                <div class="experts__item-info">
+                    <div class="experts__item-name text text--primary text--w-bold">
+                        Иванов Иван Иванович
+                    </div>
+                    <div class="experts__item-position text text--small text--primary text--w-regular">
+                        Уполномоченный по&#160;защите прав предпринимателей в&#160;городе Москве
+                    </div>
+                </div>
+                <div class="experts__item-phrase text text--pre-medium text--primary text--w-medium text-center">
+                    &#171;Цитата эксперта, которая занимает примерно одно предложение. Возможно несколько строчек&#187;
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- Модалка -->
+<div class="modal modal--feedback hystmodal" id="feedback" aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="modal__close hystmodal__close">Close</button>
+            <div class="modal__title title title--large title--primary title--w-regular text-center">
+                Оставьте заявку и&#160;мы&#160;подберем
+                для вас оборудование
+            </div>
+            <div class="modal__subtitle text text--normal text--primary text--w-regular text-center">
+                Заполните данную форму, если у&#160;вас имеется техническое задание или чертеж,
+                и&#160;прикрепите файлы.
+            </div>
+            <form action="./upload/" class="main-form__form form form--modal js-form-1"
+				  enctype="multipart/form-data"
+				  method="post">
+                <div class="main-form__wrapper-fields form__wrapper-fields">
+                    <label class="main-form__form-input form__field" for="service-form-name">
+                        <input class="main-form__form-input form__input" type="text" name="name"
+							   id="modal-form-name" required>
+                        <span class="form__placeholder text text--normal text--secondary text--w-regular">
+                            Как к&#160;вам обращаться?
+                        </span>
+                    </label>
+                    <label class="main-form__form-input form__field form__field--industry" for="modal-form-industry">
+                        <select class="form__select js-select-form" id="modal-form-industry">
+                            <option data-placeholder="true">Применение</option>
+                            <option value="Медицина">Медицина</option>
+                            <option value="Авто">Авто</option>
+                            <option value="Промышленность">Промышленность</option>
+                        </select>
+                    </label>
+                    <label class="main-form__form-input form__field" for="service-form-company">
+                        <input class="main-form__form-input form__input js-input" type="text" name="company"
+							   id="modal-form-company">
+                        <span class="form__placeholder text text--normal text--secondary text--w-regular">
+                                Название компании
+                            </span>
+                    </label>
+                    <label class="main-form__form-input form__field form__field--material" for="modal-form-material">
+                        <select class="form__select js-select-form" id="modal-form-material">
+                            <option data-placeholder="true">Используемый материал</option>
+                            <option value="Металл">Металл</option>
+                            <option value="Дерево">Дерево</option>
+                            <option value="Алмазы">Алмазы</option>
+                            <option value="Платы">Платы</option>
+                        </select>
+                    </label>
+                    <label class="main-form__form-input form__field is-error" for="modal-form-phone">
+                        <input class="main-form__form-input form__input js-input" type="tel" name="phone"
+							   id="modal-form-phone" required>
+                        <span class="form__placeholder text text--normal text--secondary text--w-regular">
+                                Контактный телефон
+                            </span>
+                    </label>
+                    <label class="main-form__form-input form__field form__field--category" for="modal-form-category">
+                        <select class="form__select js-select-form" id="modal-form-category">
+                            <option data-placeholder="true">Категория</option>
+                            <option value="Аниме">Аниме</option>
+                            <option value="Фильмы">Фильмы</option>
+                            <option value="Металл">Металл</option>
+                            <option value="Рок">Рок</option>
+                            <option value="Герои III">Герои III</option>
+                        </select>
+                    </label>
+                    <label class="main-form__form-input form__field" for="service-form-email">
+                        <input class="main-form__form-input form__input js-input" type="email" name="email"
+							   id="modal-form-email" required>
+                        <span class="form__placeholder text text--normal text--secondary text--w-regular">
+                                E&#8212;mail
+                            </span>
+                    </label>
+                    <label class="main-form__form-input form__field form__field--type" for="modal-form-type">
+                        <select class="form__select js-select-form" id="modal-form-type">
+                            <option data-placeholder="true">Тип лазера</option>
+                            <option value="Обжигающий">Обжигающий</option>
+                            <option value="Сжигающий">Сжигающий</option>
+                            <option value="Пронзающий">Пронзающий</option>
+                            <option value="Испепеляющий">Испепеляющий</option>
+                        </select>
+                    </label>
+                    <label class="main-form__form-input form__field" for="modal-form-textarea">
+                            <textarea class="main-form__text-area form__input form__input--textarea" name="message"
+									  id="modal-form-textarea"
+									  cols="30" rows="1" placeholder="Опишите вашу задачу"></textarea>
+                    </label>
+                </div>
+                <div class="main-form__form-files-wrapper form__files-wrapper">
+                    <div class="form__dropzone">
+                        <input class="js-input-drag-adn-drop"
+							   type="file"
+							   name="FILES[]"
+							   data-max-file-size="25MB"
+							   multiple />
+                    </div>
+                </div>
+                <div class="main-form__captcha form__captcha">
+                    <div style="height: 102px;min-height: 102px !important;" class="smart-captcha-manual"></div>
+                </div>
+                <div class="main-form__actions form__actions d-flex flex-justify-sb flex-align-center">
+                    <button type="button" class="main-form__form-button form__button button button--primary"
+							data-hystmodal="#thanks">
+                        Отправить заявку
+                    </button>
+                    <div class="main-form__accept form__accept">
+                        <input class="main-form__checkbox form__checkbox" type="checkbox" id="modal-form-agreement"
+							   name="agreement"
+							   checked>
+                        <label for="modal-form-agreement"
+							   class="main-form__accept-label form__accept-label text text--normal text--primary text--w-regular">
+                                <span class="main-form__accept-text form__accept-text">
+                                    <a href="">Согласен на&#160;обработку персональных данных</a>
+                                </span>
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Модалка успешной отправки -->
+<div class="modal modal--thanks hystmodal js-modal-success" id="thanks" aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="modal__close hystmodal__close">Close</button>
+            <div class="modal__inner">
+                <div class="modal__inner-text">
+                    <div class="modal__title title title--large title--primary title--w-bold">
+                        Спасибо! Ваша заявка принята.
+                    </div>
+                    <div class="modal__subtitle text text--large text--primary text--w-regular">
+                        Наши менеджеры свяжутся с&#160;вами в&#160;ближайшее время для обсуждения деталей
+                    </div>
+                    <button class="modal__thanks-btn button button--primary" data-hystclose>
+                        Вернуться назад
+                    </button>
+                </div>
+                <div class="modal__pic">
+                    <picture>
+<source srcset="./img/other/thanks.webp 1x, ./img/other/thanks@2x.webp 2x" type="image/webp">
+<source srcset="./img/other/thanks.png 1x, ./img/other/thanks@2x.png 2x" type="image/png">
+<img src="./img/other/thanks.png" alt="">
+</picture>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer" id="contacts">
+    <div class="footer__outer container-full">
+        <div class="footer__body container white-bg">
+            <div class="footer__top d-flex flex-align-center flex-justify-sb">
+                <div class="footer__heading title title--big title--primary title--w-bold">
+                    Контакты
+                </div>
+                <div class="footer__contacts d-flex">
+                    <div class="footer__contact">
+                        <div class="footer__contact-name text text--small text--primary text--w-regular">
+                            Адрес электронной почты
+                        </div>
+                        <a href="mailto:info@probono-300.ru"
+						   class="footer__contact-link text text--pre-large text--primary text--w-regular link">
+                            info@probono-300.ru
+                        </a>
+                    </div>
+                    <div class="footer__contact">
+                        <div class="footer__contact-name text text--small text--primary text--w-regular">
+                            Номер телефона
+                        </div>
+                        <a href="tel:+79276265801"
+						   class="footer__contact-link text text--pre-large text--primary text--w-regular link">
+                            8-927-626-58-01
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__center">
+                <div class="footer__columns d-flex flex-justify-sb">
+                    <div class="footer__col d-flex d-flex-column flex-justify-sb">
+                        <div class="footer__logos d-flex">
+                            <div class="footer__logo">
+                                <img src="./img/raiting.svg" alt="">
+                            </div>
+                            <div class="footer__logo">
+                                <img src="./img/logo.svg" alt="">
+                            </div>
+                        </div>
+                        <a href="" class="footer__link-policy text text--small text--primary text--w-regular link">
+                            Политика обработки перс. данных
+                        </a>
+                    </div>
+                    <div class="footer__col">
+                        <nav class="footer__menu">
+                            <ul class="footer__menu-list">
+                                <li class="footer__menu-item">
+                                    <a href="" class="footer__menu-link">
+                                        экспертный совет
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="" class="footer__menu-link">
+                                        результаты рейтингов
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="" class="footer__menu-link">
+                                        новости
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="" class="footer__menu-link">
+                                        контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__actions d-flex d-flex-column">
+                            <button class="button button--text" data-hystmodal="#feedback">
+                                <span>Подать заявку</span>
+                                <span class="button__icon-wrap">
+                                    <svg width="14" height="14" class="button__icon">
+                                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="button button--text" data-hystmodal="#feedback">
+                                <span>Задать вопрос</span>
+                                <span class="button__icon-wrap">
+                                    <svg width="14" height="14" class="button__icon">
+                                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                            <a href="" class="button button--text" download>
+                                <span>Скачать положение</span>
+                                <span class="button__icon-wrap">
+                                    <svg width="14" height="14" class="button__icon">
+                                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom d-flex flex-justify-center">
+                <div class="footer__copyright text text--small text--primary text--w-regular">
+                    &#169; 2025 Все права защищены.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/index.bundle.js"></script>
+</body>
+</html>

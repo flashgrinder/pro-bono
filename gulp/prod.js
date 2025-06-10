@@ -99,7 +99,7 @@ gulp.task('sass:prod', function () {
 	const prt = require('postcss-responsive-type');
 	const plugins = [
 		prt(),
-		autoprefixer()
+		// autoprefixer()
 	]
 	return gulp
 		.src('./src/scss/*.scss')
@@ -122,7 +122,7 @@ gulp.task('sass:prod', function () {
 			)
 		)
 		.pipe(csso())
-		// .pipe(sourceMaps.write())
+		.pipe(sourceMaps.write())
 		.pipe(gulp.dest('./prod/css/'));
 });
 
