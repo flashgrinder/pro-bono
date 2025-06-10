@@ -5,11 +5,24 @@
 	}
 }
 
+.experts__heading {
+	@include tablet {
+		font-size: 42px;
+	}
+	@include mobile {
+		font-size: 32px;
+	}
+}
+
 .experts__result-name {
 	padding: 29px 20px;
 	background-color: var(--white-bg);
 	border-radius: 20px;
 	margin-bottom: 20px;
+	@include mobile {
+		font-size: 18px;
+		padding: 20px;
+	}
 }
 
 .experts__subtitle {
@@ -166,16 +179,43 @@
 
 .experts__achievements + .experts__achievements {
 	margin-top: 60px;
+	@include tablet {
+		margin-top: 32px;
+	}
 }
 
 .experts__subtitle + .experts__achievements {
 	margin-top: 60px;
 }
 
+.experts__item-tag.tag {
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	padding: 10px;
+	font-size: 12px;
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0);
+	transition: transform var(--hover-time) ease-in-out,
+	opacity var(--hover-time) ease-in-out,
+	visibility var(--hover-time) ease-in-out;
+}
+
+.experts__item:not(.is-active):hover .experts__item-tag,
+.experts__item.is-active .experts__item-tag {
+	left: -20px;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateX(-100%);
+}
+
 /* Experts-results */
 .experts.experts--results {
-	padding: 140px 0;
-	border-bottom: 1px solid #C5C5C5;
+	padding: 140px 0 70px;
+	@include tablet {
+		padding: 70px 0 40px;
+	}
 }
 
 .experts.experts--results .experts__items {
@@ -190,4 +230,35 @@
 	@include mobile {
 		grid-template-columns: 1fr;
 	}
+}
+
+/* Experts-winners */
+.experts.experts--winners {
+	padding-bottom: 70px;
+	@include tablet {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+.experts.experts--winners .experts__items {
+	padding-bottom: 140px;
+	border-bottom: 1px solid #C5C5C5;
+	@include tablet {
+		padding-bottom: 40px;
+	}
+}
+
+/* Experts-cases */
+.experts.experts--cases {
+	@include tablet {
+		padding-bottom: 40px;
+	}
+}
+
+.experts.experts--cases .experts__item:hover .experts__item-tag.tag {
+	left: 20px;
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0);
 }

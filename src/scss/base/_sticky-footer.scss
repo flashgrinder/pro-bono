@@ -10,4 +10,7 @@ html, body {
 
 .footer {
 	padding: 70px 0 0;
+	@include tablet {
+		padding: 40px 0 0;
+	}
 }

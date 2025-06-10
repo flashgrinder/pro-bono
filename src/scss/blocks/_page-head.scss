@@ -1,3 +1,10 @@
+.page-head {
+	padding-top: 20px;
+	padding-bottom: 60px;
+	max-width: 1960px;
+	margin: 0 auto;
+}
+
 .page-head__outer {
 	padding-top: 20px;
 }
@@ -14,4 +21,98 @@
 
 .page-head__heading {
 	max-width: 831px;
+}
+
+.page-head__splide-slide {
+	width: 100%;
+	overflow: hidden;
+	border-radius: 40px;
+}
+
+.page-head__pic {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.page-head__pic picture,
+.page-head__pic img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.page-head__info {
+	position: relative;
+	max-width: 831px;
+	z-index: 2;
+}
+
+.page-head__prop-name {
+	opacity: .6;
+}
+
+.page-head__prop-value {
+	margin-top: 8px;
+	@include mobile {
+		font-size: 18px;
+	}
+}
+
+.page-head__prop + .page-head__prop {
+	margin-top: 30px;
+	@include mobile {
+		margin-top: 20px;
+	}
+}
+
+.page-head.page-head--slider {
+	padding-bottom: 0;
+}
+
+.page-head.page-head--slider .page-head__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.page-head.page-head--slider .page-head__inner-slide {
+	height: 100%;
+}
+
+.page-head.page-head--slider .page-head__body {
+	padding-top: 0;
+	padding-bottom: 0;
+	min-height: auto;
+	@include tablet {
+		border-radius: 30px;
+	}
+	@include mobile {
+		border-radius: 20px;
+	}
+}
+
+.page-head.page-head--slider .slider-pagination-dotted.splide__pagination {
+	bottom: 16px;
+}
+
+.page-head.page-head--slider .slider-nav__splide-arrow--prev.splide__arrow--prev {
+	@include to(1200px) {
+		left: 20px;
+	}
+	@include mobile {
+		left: 10px;
+	}
+}
+
+.page-head.page-head--slider .slider-nav__splide-arrow--next.splide__arrow--next {
+	@include to(1200px) {
+		right: 20px;
+	}
+	@include mobile {
+		right: 10px;
+	}
 }

@@ -13,8 +13,11 @@
 
 	max-width: var(--container-width);
 	width: 100%;
+	@include tablet {
+		--container-padding: 30px;
+	}
 	@include mobile {
-		--container-padding: 15px;
+		--container-padding: 10px;
 	}
 }
 
@@ -32,6 +35,9 @@
 .container-full {
 	padding: 0 var(--container-padding);
 	max-width: 100%;
+	@include mobile {
+		--container-padding: 10px;
+	}
 }
 
 .container-left-50 {

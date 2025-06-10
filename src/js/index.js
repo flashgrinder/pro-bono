@@ -4,6 +4,7 @@ import mobileNav from './modules/mobile-nav.js';
 import mainScreenSliderInit from "./modules/main-screen-slider";
 import newsSliderInit from "./modules/news-slider";
 import expertsItemsAnimation from "./modules/animation-experts-items";
+import pageHeadSliderInit from "./modules/page-head-slider";
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
@@ -11,6 +12,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     mainScreenSliderInit();
     newsSliderInit();
     expertsItemsAnimation();
+    pageHeadSliderInit();
     Fancybox.bind('[data-fancybox]');
 
 })
