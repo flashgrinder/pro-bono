@@ -5,18 +5,23 @@
 	margin: 0 auto;
 }
 
-.page-head__outer {
-	padding-top: 20px;
-}
-
 .page-head__body {
 	min-height: 800px;
+	max-height: 800px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	border-radius: 40px;
 	padding-top: 40px;
 	padding-bottom: 40px;
+	@include tablet {
+		min-height: 745px;
+		max-height: 745px;
+	}
+	@include mobile {
+		min-height: 460px;
+		max-height: 460px;
+	}
 }
 
 .page-head__heading {

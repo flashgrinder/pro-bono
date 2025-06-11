@@ -41,6 +41,11 @@
 	border-radius: 40px;
 }
 
+.news__item:hover .news__item-pic picture,
+.news__item:hover .news__item-pic img {
+	transform: scale(1.1);
+}
+
 .news__item-pic {
 	position: relative;
 	border-radius: 30px;
@@ -55,6 +60,7 @@
 	object-fit: cover;
 	min-height: 340px;
 	max-height: 340px;
+	transition: transform var(--hover-time) ease-in-out;
 }
 
 .news__item-tag.tag {

@@ -7,10 +7,10 @@ function expertsItemsAnimation(container = document) {
         expertsItems.forEach((el, i) => {
             el.addEventListener("click", function () {
 
-                const currentlySelectedElem = document.querySelector(".js-expert-item.is-active");
-                if (currentlySelectedElem) {
-                    currentlySelectedElem.classList.remove("is-active");
-                }
+                // const currentlySelectedElem = document.querySelector(".js-expert-item.is-active");
+                // if (currentlySelectedElem) {
+                //     currentlySelectedElem.classList.remove("is-active");
+                // }
 
                 el.classList.toggle("is-active");
                 event.stopPropagation();

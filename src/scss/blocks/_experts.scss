@@ -50,6 +50,7 @@
 	overflow: hidden;
 	padding: 10px;
 	border-radius: 40px;
+	cursor: pointer;
 	transition: box-shadow var(--hover-time) ease-in-out;
 }
 
@@ -63,14 +64,14 @@
 }
 
 .experts__item.is-active .experts__item-pic {
-	transform: translateY(calc(-100% + 300px)) scale(.3);
+	transform: translateY(calc(-100% + 300px)) scale(.25);
 	@include mobile {
 		transform: translateY(calc(-100% + 250px)) scale(.3);
 	}
 }
 
 .experts__item.is-active .experts__item-info {
-	transform: translateY(-300px);
+	transform: translateY(-290px);
 	@include mobile {
 		transform: translateY(-250px);
 	}
@@ -94,7 +95,7 @@
 .experts__item:not(.is-active):hover .experts__item-tooltip {
 	opacity: 1;
 	visibility: visible;
-	left: 50%;
+	left: 20px;
 }
 
 .experts__item:not(.is-active):hover .experts__item-pic picture,
@@ -120,9 +121,9 @@
 .experts__item-tooltip {
 	position: absolute;
 	width: max-content;
-	left: 40%;
+	left: -100%;
 	bottom: 20px;
-	transform: translateX(-50%);
+	//transform: translateX(-100%);
 	background-color: var(--white-bg);
 	padding: 10px;
 	border-radius: 55px;
