@@ -69,10 +69,15 @@ function mainScreenSliderInit () {
                 page      : 'splide__pagination__page slider-pagination-dotted__page',
             },
             breakpoints: {
+                1440: {
+                    height: 820
+                },
                 1024: {
-                    perPage: 1,
-                    gap: '16px',
-                    arrows: false
+                    height: 1100,
+                    pagination: false
+                },
+                768: {
+                    height: 700
                 },
             }
         } );

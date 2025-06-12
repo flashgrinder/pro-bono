@@ -68,6 +68,9 @@
 
 .b-padding-70 {
 	padding: var(--padding-block-70);
+	@include mobileXS {
+		--padding-block-70: 40px 0;
+	}
 }
 
 .b-padding-top-140 {

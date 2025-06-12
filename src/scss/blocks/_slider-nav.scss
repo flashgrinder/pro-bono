@@ -19,14 +19,8 @@
 
 .slider-nav__splide-arrow--prev.splide__arrow--prev {
   left: 40px;
-  @include to(1200px) {
-    left: -25px;
-  }
 }
 
 .slider-nav__splide-arrow--next.splide__arrow--next {
   right: 40px;
-  @include to(1200px) {
-    right: -25px;
-  }
 }

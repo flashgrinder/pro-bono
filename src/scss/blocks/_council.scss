@@ -10,10 +10,19 @@
 	margin-top: 0;
 }
 
+.council__heading {
+	@include mobile {
+		margin-bottom: 18px;
+	}
+}
+
 .council__subtitle {
 	max-width: 840px;
 	margin: 0 auto;
 	opacity: .7;
+	@include mobile {
+		font-size: 14px;
+	}
 }
 
 .council__expert {
@@ -27,6 +36,7 @@
 	border-radius: 40px;
 	@include mobile {
 		grid-template-columns: 112px 1fr;
+		margin-top: 40px;
 	}
 }
 
@@ -76,4 +86,11 @@
 
 .council__actions {
 	margin-top: 60px;
+	@include mobile {
+		margin-top: 40px;
+	}
+}
+
+.council__actions .button {
+	font-size: 20px;
 }
