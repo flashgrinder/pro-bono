@@ -1,1 +1,208 @@
-<?php
+</main>
+
+<!-- Модалка -->
+<div class="modal modal--feedback hystmodal" id="feedback" aria-hidden="true">
+	<button data-hystclose class="modal__close hystmodal__close">Close</button>
+	<div class="modal__wrap hystmodal__wrap">
+		<div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
+			<div class="modal__header d-flex d-flex-column flex-justify-center">
+				<div class="modal__logo">
+					<img src="<?= STANDART_DIR; ?>img/raiting.svg" alt="">
+				</div>
+				<div class="modal__title text text--large text--primary text--w-bold text-center">
+					Задать вопрос
+				</div>
+				<div class="modal__subtitle text text--small text--primary text--w-regular text-center">
+					Если у вас возник вопрос или нужна обратная связь от представителей конкурса, заполните форму ниже
+				</div>
+			</div>
+			<form action="./upload/" class="main-form__form form form--modal js-form-1"
+			      enctype="multipart/form-data"
+			      method="post">
+				<label class="form__field">
+					<input class="form__input js-input" type="text" name="name" placeholder="Ваше имя">
+				</label>
+				<label class="form__field">
+					<input class="form__input js-input" type="tel" name="phone" placeholder="Ваш номер телефона">
+				</label>
+				<label class="form__field">
+					<input class="form__input js-input" type="email" name="email" placeholder="Ваш адрес электронной почты">
+				</label>
+				<label class="form__field form__field--textarea">
+					<textarea name="message" class="form__input form__input--textarea" placeholder="Опишите ваш вопрос"></textarea>
+				</label>
+				<div class="form__actions">
+					<div class="form__accept">
+						<input class="form__checkbox" type="checkbox" id="modal-form-agreement"
+						       name="agreement"
+						       checked>
+						<label for="modal-form-agreement"
+						       class="form__accept-label text text--normal text--primary text--w-regular">
+								<span class="main-form__accept-text form__accept-text">
+									<a href="">Согласен на обработку персональных данных</a>
+								</span>
+						</label>
+					</div>
+					<button type="button" class="form__button button button--primary"
+					        data-hystmodal="#thanks">
+						<span>Отправить</span>
+						<span class="button__icon-wrap">
+							<svg width="14" height="14" class="button__icon">
+								<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+							</svg>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- Модалка успешной отправки -->
+<div class="modal modal--thanks hystmodal js-modal-success" id="thanks" aria-hidden="true">
+	<button data-hystclose class="modal__close hystmodal__close">Close</button>
+	<div class="modal__wrap hystmodal__wrap">
+		<div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
+			<div class="modal__header d-flex d-flex-column flex-justify-center">
+				<div class="modal__logo">
+					<img src="<?= STANDART_DIR; ?>img/raiting.svg" alt="">
+				</div>
+				<div class="modal__title text text--large text--primary text--w-bold text-center">
+					Спасибо!
+				</div>
+				<div class="modal__subtitle text text--small text--primary text--w-regular text-center">
+					Данные успешно отправлены, мы свяжемся <br> с вами в ближайшее время!
+				</div>
+			</div>
+			<button class="modal__thanks-btn button button--primary" data-hystclose>
+				<span>Назад к сайту</span>
+				<span class="button__icon-wrap">
+					<svg width="14" height="14" class="button__icon">
+						<use href="./img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+					</svg>
+				</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<footer class="footer" id="contacts">
+	<div class="footer__outer container-full">
+		<div class="footer__body container white-bg">
+			<div class="footer__top d-flex flex-align-center flex-justify-sb">
+				<div class="footer__heading title title--big title--primary title--w-bold">
+					Контакты
+				</div>
+				<div class="footer__contacts d-flex">
+					<div class="footer__contact">
+						<div class="footer__contact-name text text--small text--primary text--w-regular">
+							Телеграм-канал
+						</div>
+						<a href="https://t.me/info_probono"
+						   class="footer__contact-link text text--pre-large text--primary text--w-regular link">
+							@info_probono
+						</a>
+					</div>
+					<div class="footer__contact">
+						<div class="footer__contact-name text text--small text--primary text--w-regular">
+							Адрес электронной почты
+						</div>
+						<a href="mailto:info@probono-300.ru"
+						   class="footer__contact-link text text--pre-large text--primary text--w-regular link">
+							info@probono-300.ru
+						</a>
+					</div>
+					<div class="footer__contact">
+						<div class="footer__contact-name text text--small text--primary text--w-regular">
+							Номер телефона
+						</div>
+						<a href="tel:+79276265801"
+						   class="footer__contact-link text text--pre-large text--primary text--w-regular link">
+							8-927-626-58-01
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__center">
+				<div class="footer__columns d-flex flex-justify-sb">
+					<div class="footer__col d-flex d-flex-column flex-justify-sb">
+						<div class="footer__logos d-flex">
+							<div class="footer__logo">
+								<img src="<?= STANDART_DIR; ?>img/raiting.svg" alt="">
+							</div>
+							<div class="footer__logo">
+								<img src="<?= STANDART_DIR; ?>img/logo.svg" alt="">
+							</div>
+						</div>
+						<a href="" class="footer__link-policy text text--small text--primary text--w-regular link">
+							Политика обработки перс. данных
+						</a>
+					</div>
+					<div class="footer__col">
+						<nav class="footer__menu">
+							<ul class="footer__menu-list">
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">
+										экспертный совет
+									</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">
+										результаты рейтингов
+									</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">
+										новости
+									</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">
+										контакты
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__col">
+						<div class="footer__actions d-flex d-flex-column">
+							<button class="button button--text" data-hystmodal="#feedback">
+								<span>Подать заявку</span>
+								<span class="button__icon-wrap">
+									<svg width="14" height="14" class="button__icon">
+										<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+									</svg>
+								</span>
+							</button>
+							<button class="button button--text" data-hystmodal="#feedback">
+								<span>Задать вопрос</span>
+								<span class="button__icon-wrap">
+									<svg width="14" height="14" class="button__icon">
+										<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+									</svg>
+								</span>
+							</button>
+							<a href="" class="button button--text" download>
+								<span>Скачать положение</span>
+								<span class="button__icon-wrap">
+									<svg width="14" height="14" class="button__icon">
+										<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+									</svg>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom d-flex flex-justify-center">
+				<div class="footer__copyright text text--small text--primary text--w-regular">
+					© 2025 Все права защищены.
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<?php wp_footer(); ?>
+</body>
+</html>
