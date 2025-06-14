@@ -5,6 +5,8 @@ import mainScreenSliderInit from "./modules/main-screen-slider";
 import newsSliderInit from "./modules/news-slider";
 import expertsItemsAnimation from "./modules/animation-experts-items";
 import pageHeadSliderInit from "./modules/page-head-slider";
+import initAcc from "./modules/accordion";
+import initModal from "./modules/modals-form";
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
@@ -13,6 +15,14 @@ document.addEventListener('DOMContentLoaded', ()=> {
     newsSliderInit();
     expertsItemsAnimation();
     pageHeadSliderInit();
+
+    let accordions = document.querySelectorAll('.js-accordion');
+    if (accordions) {
+        for (let i = 1; i < accordions.length; i++) {
+            initAcc('.js-accordion-' + i, false);
+        }
+    }
+    initModal();
     Fancybox.bind('[data-fancybox]');
 
 })

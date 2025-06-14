@@ -50,119 +50,56 @@
 
 <!-- Модалка -->
 <div class="modal modal--feedback hystmodal" id="feedback" aria-hidden="true">
+    <button data-hystclose class="modal__close hystmodal__close">Close</button>
     <div class="modal__wrap hystmodal__wrap">
         <div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="modal__close hystmodal__close">Close</button>
-            <div class="modal__title title title--large title--primary title--w-regular text-center">
-                Оставьте заявку и&#160;мы&#160;подберем
-                для вас оборудование
-            </div>
-            <div class="modal__subtitle text text--normal text--primary text--w-regular text-center">
-                Заполните данную форму, если у&#160;вас имеется техническое задание или чертеж,
-                и&#160;прикрепите файлы.
+            <div class="modal__header d-flex d-flex-column flex-justify-center">
+                <div class="modal__logo">
+                    <img src="./img/raiting.svg" alt="">
+                </div>
+                <div class="modal__title text text--large text--primary text--w-bold text-center">
+                    Задать вопрос
+                </div>
+                <div class="modal__subtitle text text--small text--primary text--w-regular text-center">
+                    Если у&#160;вас возник вопрос или нужна обратная связь от&#160;представителей конкурса, заполните форму ниже
+                </div>
             </div>
             <form action="./upload/" class="main-form__form form form--modal js-form-1"
 				  enctype="multipart/form-data"
 				  method="post">
-                <div class="main-form__wrapper-fields form__wrapper-fields">
-                    <label class="main-form__form-input form__field" for="service-form-name">
-                        <input class="main-form__form-input form__input" type="text" name="name"
-							   id="modal-form-name" required>
-                        <span class="form__placeholder text text--normal text--secondary text--w-regular">
-                            Как к&#160;вам обращаться?
-                        </span>
-                    </label>
-                    <label class="main-form__form-input form__field form__field--industry" for="modal-form-industry">
-                        <select class="form__select js-select-form" id="modal-form-industry">
-                            <option data-placeholder="true">Применение</option>
-                            <option value="Медицина">Медицина</option>
-                            <option value="Авто">Авто</option>
-                            <option value="Промышленность">Промышленность</option>
-                        </select>
-                    </label>
-                    <label class="main-form__form-input form__field" for="service-form-company">
-                        <input class="main-form__form-input form__input js-input" type="text" name="company"
-							   id="modal-form-company">
-                        <span class="form__placeholder text text--normal text--secondary text--w-regular">
-                                Название компании
-                            </span>
-                    </label>
-                    <label class="main-form__form-input form__field form__field--material" for="modal-form-material">
-                        <select class="form__select js-select-form" id="modal-form-material">
-                            <option data-placeholder="true">Используемый материал</option>
-                            <option value="Металл">Металл</option>
-                            <option value="Дерево">Дерево</option>
-                            <option value="Алмазы">Алмазы</option>
-                            <option value="Платы">Платы</option>
-                        </select>
-                    </label>
-                    <label class="main-form__form-input form__field is-error" for="modal-form-phone">
-                        <input class="main-form__form-input form__input js-input" type="tel" name="phone"
-							   id="modal-form-phone" required>
-                        <span class="form__placeholder text text--normal text--secondary text--w-regular">
-                                Контактный телефон
-                            </span>
-                    </label>
-                    <label class="main-form__form-input form__field form__field--category" for="modal-form-category">
-                        <select class="form__select js-select-form" id="modal-form-category">
-                            <option data-placeholder="true">Категория</option>
-                            <option value="Аниме">Аниме</option>
-                            <option value="Фильмы">Фильмы</option>
-                            <option value="Металл">Металл</option>
-                            <option value="Рок">Рок</option>
-                            <option value="Герои III">Герои III</option>
-                        </select>
-                    </label>
-                    <label class="main-form__form-input form__field" for="service-form-email">
-                        <input class="main-form__form-input form__input js-input" type="email" name="email"
-							   id="modal-form-email" required>
-                        <span class="form__placeholder text text--normal text--secondary text--w-regular">
-                                E&#8212;mail
-                            </span>
-                    </label>
-                    <label class="main-form__form-input form__field form__field--type" for="modal-form-type">
-                        <select class="form__select js-select-form" id="modal-form-type">
-                            <option data-placeholder="true">Тип лазера</option>
-                            <option value="Обжигающий">Обжигающий</option>
-                            <option value="Сжигающий">Сжигающий</option>
-                            <option value="Пронзающий">Пронзающий</option>
-                            <option value="Испепеляющий">Испепеляющий</option>
-                        </select>
-                    </label>
-                    <label class="main-form__form-input form__field" for="modal-form-textarea">
-                            <textarea class="main-form__text-area form__input form__input--textarea" name="message"
-									  id="modal-form-textarea"
-									  cols="30" rows="1" placeholder="Опишите вашу задачу"></textarea>
-                    </label>
-                </div>
-                <div class="main-form__form-files-wrapper form__files-wrapper">
-                    <div class="form__dropzone">
-                        <input class="js-input-drag-adn-drop"
-							   type="file"
-							   name="FILES[]"
-							   data-max-file-size="25MB"
-							   multiple />
-                    </div>
-                </div>
-                <div class="main-form__captcha form__captcha">
-                    <div style="height: 102px;min-height: 102px !important;" class="smart-captcha-manual"></div>
-                </div>
-                <div class="main-form__actions form__actions d-flex flex-justify-sb flex-align-center">
-                    <button type="button" class="main-form__form-button form__button button button--primary"
-							data-hystmodal="#thanks">
-                        Отправить заявку
-                    </button>
-                    <div class="main-form__accept form__accept">
-                        <input class="main-form__checkbox form__checkbox" type="checkbox" id="modal-form-agreement"
+                <label class="form__field">
+                    <input class="form__input js-input" type="text" name="name" placeholder="Ваше имя">
+                </label>
+                <label class="form__field">
+                    <input class="form__input js-input" type="tel" name="phone" placeholder="Ваш номер телефона">
+                </label>
+                <label class="form__field">
+                    <input class="form__input js-input" type="email" name="email" placeholder="Ваш адрес электронной почты">
+                </label>
+                <label class="form__field form__field--textarea">
+                    <textarea name="message" class="form__input form__input--textarea" placeholder="Опишите ваш вопрос"></textarea>
+                </label>
+                <div class="form__actions">
+                    <div class="form__accept">
+                        <input class="form__checkbox" type="checkbox" id="modal-form-agreement"
 							   name="agreement"
 							   checked>
                         <label for="modal-form-agreement"
-							   class="main-form__accept-label form__accept-label text text--normal text--primary text--w-regular">
+							   class="form__accept-label text text--normal text--primary text--w-regular">
                                 <span class="main-form__accept-text form__accept-text">
                                     <a href="">Согласен на&#160;обработку персональных данных</a>
                                 </span>
                         </label>
                     </div>
+                    <button type="button" class="form__button button button--primary"
+							data-hystmodal="#thanks">
+                        <span>Отправить</span>
+                        <span class="button__icon-wrap">
+                            <svg width="14" height="14" class="button__icon">
+                                <use href="./img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+                            </svg>
+                        </span>
+                    </button>
                 </div>
             </form>
         </div>
@@ -171,29 +108,28 @@
 
 <!-- Модалка успешной отправки -->
 <div class="modal modal--thanks hystmodal js-modal-success" id="thanks" aria-hidden="true">
+    <button data-hystclose class="modal__close hystmodal__close">Close</button>
     <div class="modal__wrap hystmodal__wrap">
         <div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="modal__close hystmodal__close">Close</button>
-            <div class="modal__inner">
-                <div class="modal__inner-text">
-                    <div class="modal__title title title--large title--primary title--w-bold">
-                        Спасибо! Ваша заявка принята.
-                    </div>
-                    <div class="modal__subtitle text text--large text--primary text--w-regular">
-                        Наши менеджеры свяжутся с&#160;вами в&#160;ближайшее время для обсуждения деталей
-                    </div>
-                    <button class="modal__thanks-btn button button--primary" data-hystclose>
-                        Вернуться назад
-                    </button>
+            <div class="modal__header d-flex d-flex-column flex-justify-center">
+                <div class="modal__logo">
+                    <img src="./img/raiting.svg" alt="">
                 </div>
-                <div class="modal__pic">
-                    <picture>
-<source srcset="./img/other/thanks.webp 1x, ./img/other/thanks@2x.webp 2x" type="image/webp">
-<source srcset="./img/other/thanks.png 1x, ./img/other/thanks@2x.png 2x" type="image/png">
-<img src="./img/other/thanks.png" alt="">
-</picture>
+                <div class="modal__title text text--large text--primary text--w-bold text-center">
+                    Спасибо!
+                </div>
+                <div class="modal__subtitle text text--small text--primary text--w-regular text-center">
+                    Данные успешно отправлены, мы&#160;свяжемся <br> с&#160;вами в&#160;ближайшее время!
                 </div>
             </div>
+            <button class="modal__thanks-btn button button--primary" data-hystclose>
+                <span>Назад к&#160;сайту</span>
+                <span class="button__icon-wrap">
+                    <svg width="14" height="14" class="button__icon">
+                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+                    </svg>
+                </span>
+            </button>
         </div>
     </div>
 </div>
@@ -206,6 +142,15 @@
                     Контакты
                 </div>
                 <div class="footer__contacts d-flex">
+                    <div class="footer__contact">
+                        <div class="footer__contact-name text text--small text--primary text--w-regular">
+                            Телеграм-канал
+                        </div>
+                        <a href="https://t.me/info_probono"
+						   class="footer__contact-link text text--pre-large text--primary text--w-regular link">
+                            @info_probono
+                        </a>
+                    </div>
                     <div class="footer__contact">
                         <div class="footer__contact-name text text--small text--primary text--w-regular">
                             Адрес электронной почты

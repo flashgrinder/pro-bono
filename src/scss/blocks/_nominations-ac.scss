@@ -1,0 +1,19 @@
+.nominations-ac {
+	padding-bottom: 160px;
+	@include mobile {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+.nominations-ac__columns {
+	margin-top: 60px;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(350px, 1fr));
+	gap: 20px;
+	@include mobile {
+		grid-template-columns: 1fr;
+		gap: 10px;
+		margin-top: 40px;
+	}
+}
