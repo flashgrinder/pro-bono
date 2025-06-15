@@ -1,0 +1,85 @@
+{
+    "key": "group_684ed7aebb4fa",
+    "title": "Эксперты",
+    "fields": [
+        {
+            "key": "field_684ed81cc9fa0",
+            "label": "Должность",
+            "name": "expert_position",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Укажите должность эксперта",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_684ed7aec9f9f",
+            "label": "Цитата",
+            "name": "expert_quote",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Короткая цитата(максимум в 3 строки)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": "",
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_684ef25712156",
+            "label": "Ссылка на кейс",
+            "name": "expert_case",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "experts"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1750004350
+}

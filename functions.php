@@ -8,5 +8,7 @@
 	include_once(__DIR__ . '/inc/filters.php');
 	/* Post type - Experts */
 	include_once(__DIR__ . '/inc/post-type_experts.php');
+	/* Post type - Cases */
+	include_once(__DIR__ . '/inc/post-type_cases.php');
 	/* Taxonomies */
 	include_once(__DIR__ . '/inc/taxonomies.php');
