@@ -46,6 +46,7 @@
 <?php wp_reset_query(); ?>
 
 <?php
+	global $wp_query;
 	$post_id = $wp_query->get_queried_object_id();
 	$post_list = new WP_Query(array(
 		'post__not_in' => [$post_id],
