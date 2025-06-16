@@ -21,6 +21,7 @@
   visibility: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(10px);
 }
 
@@ -36,7 +37,6 @@
   height: 100%;
   content: "";
   display: block;
-  background-color: #000;
   opacity: 0;
   pointer-events: none;
 }

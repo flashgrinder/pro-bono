@@ -420,7 +420,7 @@
 			<?= $result_raiting; ?>
 		</h3>
 		<div class="info__actions d-flex flex-justify-center">
-			<button class="button button--primary">
+			<button class="button button--primary" data-hystmodal="#join">
 				<span>Подать заявку</span>
 				<span class="button__icon-wrap">
                 <svg width="14" height="14" class="button__icon">

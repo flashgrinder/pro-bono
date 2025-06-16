@@ -17,7 +17,7 @@
 		register_nav_menu('header-menu', 'Меню в шапке');
 
 		// Регистрируем меню в подвале
-		register_nav_menu('footer-menu', 'Колонка в подвале - Меню');
+		register_nav_menu('footer-menu', 'Меню в подвале');
 
 		// Смена логотипа
 		add_theme_support('custom-logo');

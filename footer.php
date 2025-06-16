@@ -16,44 +16,27 @@
 					Если у вас возник вопрос или нужна обратная связь от представителей конкурса, заполните форму ниже
 				</div>
 			</div>
-			<form action="./upload/" class="main-form__form form form--modal js-form-1"
-			      enctype="multipart/form-data"
-			      method="post">
-				<label class="form__field">
-					<input class="form__input js-input" type="text" name="name" placeholder="Ваше имя">
-				</label>
-				<label class="form__field">
-					<input class="form__input js-input" type="tel" name="phone" placeholder="Ваш номер телефона">
-				</label>
-				<label class="form__field">
-					<input class="form__input js-input" type="email" name="email" placeholder="Ваш адрес электронной почты">
-				</label>
-				<label class="form__field form__field--textarea">
-					<textarea name="message" class="form__input form__input--textarea" placeholder="Опишите ваш вопрос"></textarea>
-				</label>
-				<div class="form__actions">
-					<div class="form__accept">
-						<input class="form__checkbox" type="checkbox" id="modal-form-agreement"
-						       name="agreement"
-						       checked>
-						<label for="modal-form-agreement"
-						       class="form__accept-label text text--normal text--primary text--w-regular">
-								<span class="main-form__accept-text form__accept-text">
-									<a href="">Согласен на обработку персональных данных</a>
-								</span>
-						</label>
-					</div>
-					<button type="button" class="form__button button button--primary"
-					        data-hystmodal="#thanks">
-						<span>Отправить</span>
-						<span class="button__icon-wrap">
-							<svg width="14" height="14" class="button__icon">
-								<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
-							</svg>
-						</span>
-					</button>
+			<?php echo do_shortcode( '[contact-form-7 title="Задать вопрос" html_class="main-form__form form form--modal js-form-1"]' ); ?>
+		</div>
+	</div>
+</div>
+
+<div class="modal modal--feedback hystmodal" id="join" aria-hidden="true">
+	<button data-hystclose class="modal__close hystmodal__close">Close</button>
+	<div class="modal__wrap hystmodal__wrap">
+		<div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
+			<div class="modal__header d-flex d-flex-column flex-justify-center">
+				<div class="modal__logo">
+					<img src="<?= STANDART_DIR; ?>img/raiting.svg" alt="">
 				</div>
-			</form>
+				<div class="modal__title text text--large text--primary text--w-bold text-center">
+					Принять участие в церемонии
+				</div>
+				<div class="modal__subtitle text text--small text--primary text--w-regular text-center">
+					Чтобы посетить мероприятие награждения, оставьте свои контактные данные в форме ниже. Мы отправим билет на почту
+				</div>
+			</div>
+			<?php echo do_shortcode( '[contact-form-7 title="Принять участие" html_class="main-form__form form form--modal js-form-2"]' ); ?>
 		</div>
 	</div>
 </div>
@@ -94,33 +77,62 @@
 					Контакты
 				</div>
 				<div class="footer__contacts d-flex">
-					<div class="footer__contact">
-						<div class="footer__contact-name text text--small text--primary text--w-regular">
-							Телеграм-канал
+					<?php $tg_link = get_field('tg_link', 'option'); ?>
+					<?php if (!empty($tg_link)) : ?>
+						<?php
+							$link_url = $tg_link['url'];
+							$link_title = $tg_link['title'];
+							$link_target = $tg_link['target'] ? $tg_link['target'] : '_self';
+						?>
+						<div class="footer__contact">
+							<div class="footer__contact-name text text--small text--primary text--w-regular">
+								Телеграм-канал
+							</div>
+							<a href="<?= esc_url($link_url); ?>"
+							   target="<?= esc_attr($link_target); ?>"
+							   class="footer__contact-link text text--pre-large text--primary text--w-regular link">
+								<?= esc_html($link_title); ?>
+							</a>
 						</div>
-						<a href="https://t.me/info_probono"
-						   class="footer__contact-link text text--pre-large text--primary text--w-regular link">
-							@info_probono
-						</a>
-					</div>
-					<div class="footer__contact">
-						<div class="footer__contact-name text text--small text--primary text--w-regular">
-							Адрес электронной почты
+					<?php endif; ?>
+
+					<?php $email_link = get_field('email_link', 'option'); ?>
+					<?php if (!empty($email_link)) : ?>
+					<?php
+						$link_url = $email_link['url'];
+						$link_title = $email_link['title'];
+						$link_target = $email_link['target'] ? $email_link['target'] : '_self';
+					?>
+						<div class="footer__contact">
+							<div class="footer__contact-name text text--small text--primary text--w-regular">
+								Адрес электронной почты
+							</div>
+							<a href="<?= esc_url($link_url); ?>"
+							   target="<?= esc_attr($link_target); ?>"
+							   class="footer__contact-link text text--pre-large text--primary text--w-regular link">
+								<?= esc_html($link_title); ?>
+							</a>
 						</div>
-						<a href="mailto:info@probono-300.ru"
-						   class="footer__contact-link text text--pre-large text--primary text--w-regular link">
-							info@probono-300.ru
-						</a>
-					</div>
-					<div class="footer__contact">
-						<div class="footer__contact-name text text--small text--primary text--w-regular">
-							Номер телефона
+					<?php endif; ?>
+
+					<?php $phone_link = get_field('phone_link', 'option'); ?>
+					<?php if (!empty($phone_link)) : ?>
+					<?php
+						$link_url = $phone_link['url'];
+						$link_title = $phone_link['title'];
+						$link_target = $phone_link['target'] ? $phone_link['target'] : '_self';
+					?>
+						<div class="footer__contact">
+							<div class="footer__contact-name text text--small text--primary text--w-regular">
+								Номер телефона
+							</div>
+							<a href="<?= esc_url($link_url); ?>"
+							   target="<?= esc_attr($link_target); ?>"
+							   class="footer__contact-link text text--pre-large text--primary text--w-regular link">
+								<?= esc_html($link_title); ?>
+							</a>
 						</div>
-						<a href="tel:+79276265801"
-						   class="footer__contact-link text text--pre-large text--primary text--w-regular link">
-							8-927-626-58-01
-						</a>
-					</div>
+					<?php endif; ?>
 				</div>
 			</div>
 			<div class="footer__center">
@@ -134,39 +146,33 @@
 								<img src="<?= STANDART_DIR; ?>img/logo.svg" alt="">
 							</div>
 						</div>
-						<a href="" class="footer__link-policy text text--small text--primary text--w-regular link">
-							Политика обработки перс. данных
-						</a>
+						<?php
+
+							$link = get_field('policy', 'option');
+
+							if( $link ):
+								$link_url = $link['url'];
+								$link_target = $link['target'] ? $link['target'] : '_self';
+								?>
+								<a href="<?= esc_url($link_url); ?>" class="footer__link-policy text text--small text--primary text--w-regular link" target="<?php echo esc_attr($link_target); ?>">
+									Политика обработки перс. данных
+								</a>
+							<?php endif; ?>
 					</div>
 					<div class="footer__col">
-						<nav class="footer__menu">
-							<ul class="footer__menu-list">
-								<li class="footer__menu-item">
-									<a href="" class="footer__menu-link">
-										экспертный совет
-									</a>
-								</li>
-								<li class="footer__menu-item">
-									<a href="" class="footer__menu-link">
-										результаты рейтингов
-									</a>
-								</li>
-								<li class="footer__menu-item">
-									<a href="" class="footer__menu-link">
-										новости
-									</a>
-								</li>
-								<li class="footer__menu-item">
-									<a href="" class="footer__menu-link">
-										контакты
-									</a>
-								</li>
-							</ul>
-						</nav>
+						<?php
+							wp_nav_menu([
+								'theme_location'  => 'footer-menu',
+								'container'       => 'nav',
+								'container_class' => 'footer__menu',
+								'menu_class'      => '',
+								'items_wrap'      => '<ul class="%2$s footer__menu-list">%3$s</ul>'
+							]);
+						?>
 					</div>
 					<div class="footer__col">
 						<div class="footer__actions d-flex d-flex-column">
-							<button class="button button--text" data-hystmodal="#feedback">
+							<button class="button button--text" data-hystmodal="#join">
 								<span>Подать заявку</span>
 								<span class="button__icon-wrap">
 									<svg width="14" height="14" class="button__icon">
@@ -182,14 +188,17 @@
 									</svg>
 								</span>
 							</button>
-							<a href="" class="button button--text" download>
-								<span>Скачать положение</span>
-								<span class="button__icon-wrap">
-									<svg width="14" height="14" class="button__icon">
-										<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
-									</svg>
-								</span>
-							</a>
+							<?php $footer_doc = get_field('footer-doc'); ?>
+							<?php if( $footer_doc ): ?>
+								<a href="<?= $footer_doc['url']; ?>" class="button button--text" download>
+									<span>Скачать положение</span>
+									<span class="button__icon-wrap">
+										<svg width="14" height="14" class="button__icon">
+											<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+										</svg>
+									</span>
+								</a>
+							<?php endif; ?>
 						</div>
 					</div>
 				</div>

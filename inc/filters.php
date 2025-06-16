@@ -30,7 +30,7 @@
 	add_filter( 'nav_menu_css_class', function($classes, $item, $args, $depth) {
 
 		if($args->theme_location === 'footer-menu') {
-			$classes[] = 'menu__item footer__menu-item';
+			$classes[] = 'footer__menu-item';
 		}
 
 		return $classes;
@@ -52,7 +52,7 @@
 	add_filter( 'nav_menu_link_attributes', function( $atts, $item, $args ) {
 
 		if($args->theme_location === 'footer-menu') {
-			$atts['class'] = 'menu__link footer__menu-link js-transition-link';
+			$atts['class'] = 'footer__menu-link js-transition-link';
 		}
 
 		return $atts;
