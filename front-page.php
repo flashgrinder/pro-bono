@@ -136,6 +136,80 @@
 	</div>
 </section>
 
+<?php if( have_rows('steps') ): ?>
+<section class="steps b-padding-top-140">
+	<div class="steps__body container-full">
+		<div class="steps__inner container">
+			<h3 class="steps__heading title title--big title--primary title--w-bold title--indent">
+				<?php the_field('steps-block-title'); ?>
+			</h3>
+			<p class="steps__subtitle">
+				<?php the_field('steps-block-subtitle'); ?>
+			</p>
+			<div class="steps__accordion">
+				<?php while( have_rows('steps') ): the_row();
+
+					$steps_date_start = get_sub_field('steps_date-start');
+					$steps_date_end = get_sub_field('steps_date-end');
+					$steps_title = get_sub_field('steps_title');
+					$steps_excerpt = get_sub_field('steps_excerpt');
+					$steps_img = get_sub_field('steps_img');
+
+					?>
+					<div class="steps__card choice expand">
+						<div class="steps__card-body">
+							<div class="steps__card-plunk d-flex d-flex-column flex-justify-center flex-align-center">
+								<div class="steps__card-num-wrap d-flex flex-align-center">
+									<div class="steps__card-num text text--pre-large text--primary text--w-regular">
+										0<?= get_row_index(); ?>
+									</div>
+									<svg width="16" height="16" class="steps__card-close">
+										<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#close-steps"></use>
+									</svg>
+									<svg width="16" height="16" class="steps__card-arrow">
+										<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-right-dark"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="steps__card-info d-flex d-flex-column flex-justify-sb">
+								<div class="steps__date-wrap d-flex flex-align-center">
+									<?php if (!empty($steps_date_start)) : ?>
+										<div class="steps__card-date text text--medium text--primary text--w-regular">
+											<?= $steps_date_start; ?>
+										</div>
+									<?php endif; ?>
+									<span class="steps__card-date-divider"></span>
+									<?php if (!empty($steps_date_end)) : ?>
+										<div class="steps__card-date text text--medium text--primary text--w-regular">
+											<?= $steps_date_end; ?>
+										</div>
+									<?php endif; ?>
+								</div>
+								<div class="steps__card-text">
+									<?php if (!empty($steps_title)) : ?>
+										<div class="steps__card-title text text--huge text--primary text--w-medium">
+											<?= $steps_title; ?>
+										</div>
+									<?php endif; ?>
+									<?php if (!empty($steps_excerpt)) : ?>
+										<div class="steps__card-excerpt text text--medium text--primary text--w-regular">
+											<?= $steps_excerpt; ?>
+										</div>
+									<?php endif; ?>
+								</div>
+							</div>
+							<div class="steps__card-pic">
+								<img src="<?= esc_url($steps_img['url']); ?>" alt="<?= esc_attr($steps_img['alt']); ?>">
+							</div>
+						</div>
+					</div>
+				<?php endwhile; ?>
+			</div>
+		</div>
+	</div>
+</section>
+<?php endif; ?>
+
 <section class="criteria">
 	<div class="criteria__outer container-full">
 		<div class="criteria__body container white-bg">
