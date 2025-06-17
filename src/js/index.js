@@ -8,6 +8,7 @@ import pageHeadSliderInit from "./modules/page-head-slider";
 import initAcc from "./modules/accordion";
 import initModal from "./modules/modals-form";
 import headerHideInit from "./modules/hideMenu";
+import stepsAnimationsInit from "./modules/steps-animation";
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     newsSliderInit();
     expertsItemsAnimation();
     pageHeadSliderInit();
+    stepsAnimationsInit();
 
     let accordions = document.querySelectorAll('.js-accordion');
     if (accordions) {
