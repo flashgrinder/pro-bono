@@ -122,6 +122,10 @@
 	display: none;
 }
 
+.steps__card.expand .steps__card-close {
+	display: block;
+}
+
 .steps__card.small .steps__card-arrow {
 	display: block;
 }
