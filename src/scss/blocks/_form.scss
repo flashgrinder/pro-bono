@@ -1,5 +1,8 @@
 .form__actions {
   margin-top: 50px;
+  @include mobile {
+    margin-top: 32px;
+  }
 }
 
 .form__button {
@@ -31,6 +34,10 @@
   }
 }
 
+.form__input:hover {
+  background-color: #EDEDED;
+}
+
 .form .form__input {
   border: 1px solid var(--disabled);
 }
@@ -40,7 +47,7 @@
 .form__field .form__input--textarea:focus,
 .form__field .form__input--textarea:target,
 .form__field .form__input--textarea:focus-visible {
-  border: 1px solid var(--success-border);
+  border: 1px solid #C5C5C5;
 }
 
 .form__placeholder {
@@ -128,7 +135,8 @@
   flex-grow: 0;
   //margin-right: 0.5em;
   border-radius: 2px;
-  background-color: var(--secondary-hover);
+  background-color: var(--white-bg);
+  border: 1px solid #E5E5E5;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 10px 10px;
@@ -150,12 +158,13 @@
 
 .form__checkbox:checked + .form__accept-label::before {
   border-color: var(--normal-border);
+  background-color: var(--primary);
   background-image: url("data:image/svg+xml,%3Csvg width='11' height='8' viewBox='0 0 11 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.83317 0.791748L3.87484 6.75008L1.1665 4.04175' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 
 /* стили при наведении курсора на checkbox */
 .form__checkbox:not(:disabled):not(:checked)+.form__accept-label:hover::before {
-  border-color: var(--success-border);
+  border-color: var(--secondary-hover);
 }
 /* стили для активного состояния чекбокса (при нажатии на него) */
 .form__checkbox:not(:disabled):active+.form__accept-label::before {

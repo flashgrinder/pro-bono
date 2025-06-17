@@ -140,7 +140,7 @@
 					<div class="footer__col d-flex d-flex-column flex-justify-sb">
 						<div class="footer__logos d-flex">
 							<div class="footer__logo">
-								<img src="<?= STANDART_DIR; ?>img/raiting.svg" alt="">
+								<a href="<?= home_url(); ?>"><img src="<?= STANDART_DIR; ?>img/raiting.svg" alt=""></a>
 							</div>
 							<div class="footer__logo">
 								<img src="<?= STANDART_DIR; ?>img/logo.svg" alt="">

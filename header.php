@@ -15,7 +15,7 @@
 		<div class="header__body">
 			<div class="header__inner d-flex flex-align-center flex-justify-sb">
 				<div class="header__logos d-flex flex-align-center">
-					<img src="<?= STANDART_DIR; ?>img/raiting.svg" alt="">
+					<a href="<?= home_url(); ?>"><img src="<?= STANDART_DIR; ?>img/raiting.svg" alt=""></a>
 					<img src="<?= STANDART_DIR; ?>img/logo.svg" alt="">
 				</div>
 				<nav class="header__menu menu">

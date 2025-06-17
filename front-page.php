@@ -30,14 +30,14 @@
 									<?php endif; ?>
 								</div>
 								<div class="main-screen__actions">
-									<button class="button button--secondary" data-hystmodal="#feedback">
+									<a href="#how" class="button button--secondary">
 										<span>Как подать заявку</span>
 										<span class="button__icon-wrap">
 	                                        <svg width="14" height="14" class="button__icon">
 	                                            <use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
 	                                        </svg>
 	                                    </span>
-									</button>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -61,7 +61,7 @@
 </section>
 <?php endif; ?>
 
-<section class="conditions">
+<section class="conditions" id="how">
 	<div class="conditions__outer container-full">
 		<div class="conditions__body container white-bg">
 			<h3 class="conditions__heading title title--big title--primary title--w-bold title--indent">
@@ -423,10 +423,10 @@
 			<button class="button button--primary" data-hystmodal="#join">
 				<span>Подать заявку</span>
 				<span class="button__icon-wrap">
-                <svg width="14" height="14" class="button__icon">
-                    <use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
-                </svg>
-            </span>
+	                <svg width="14" height="14" class="button__icon">
+	                    <use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+	                </svg>
+	            </span>
 			</button>
 		</div>
 	</div>

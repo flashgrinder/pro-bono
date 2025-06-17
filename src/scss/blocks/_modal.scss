@@ -4,12 +4,19 @@
   border-radius: 40px;
   max-width: 600px;
   width: 100%;
+  @include mobile {
+    padding: 40px 15px;
+  }
 }
 
 .modal__header {
   position: relative;
   padding-bottom: 50px;
   margin-bottom: 50px;
+  @include mobile {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
 }
 
 .modal__header::before {
@@ -31,6 +38,9 @@
 
 .modal__title {
   margin-top: 60px;
+  @include mobile {
+    margin-top: 32px;
+  }
 }
 
 .modal__subtitle {
@@ -48,6 +58,22 @@
   @include mobile {
     top: 14px;
     right: 14px;
+  }
+}
+
+.modal > .modal__close {
+  @include mobile {
+    display: none;
+  }
+}
+
+.modal__close.modal__close--mobile {
+  display: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.6569 6.34338L6.34315 17.6571M6.34315 6.34338L17.6569 17.6571' stroke='%23313130' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-size: 25px;
+  @include mobile {
+    display: block;
+    border: 1px solid rgb(0 0 0 / 40%);
   }
 }
 
