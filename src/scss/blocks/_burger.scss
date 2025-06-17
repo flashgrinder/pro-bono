@@ -2,14 +2,14 @@
 .burger {
 	--time: .150s;
 
-	--width: 30px;
-	--height: 24px;
+	--width: 20px;
+	--height: 10px;
 
-	--line-height: 4px;
-	--spacing: 5px;
+	--line-height: 2px;
+	--spacing: 3px;
 
-	--color: var(--primary);
-	--radius: 3px;
+	--color: #313130;
+	--radius: 0;
 
 	/* Fixed height and width */
 	/* height: var(--height); */
@@ -23,7 +23,7 @@
 	justify-content: center;
 	align-items: center;
 	z-index: 101;
-	@include mobile {
+	@include tablet {
 		display: flex;
 	}
 }
@@ -63,21 +63,21 @@
 	top: calc(var(--line-height) + var(--spacing));
 }
 
-.burger.is-active .burger__icon {
+.burger.is-open .burger__icon {
 	background-color: transparent;
 }
 
-.burger.is-active .burger__icon::before,
-.burger.is-active .burger__icon::after {
+.burger.is-open .burger__icon::before,
+.burger.is-open .burger__icon::after {
 	top: 0;
 	transition: top var(--time) linear,
 		transform var(--time) ease-in var(--time);
 }
 
-.burger.is-active .burger__icon::before {
+.burger.is-open .burger__icon::before {
 	transform: rotate(45deg);
 }
 
-.burger.is-active .burger__icon::after {
+.burger.is-open .burger__icon::after {
 	transform: rotate(-45deg);
 }

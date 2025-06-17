@@ -61,7 +61,7 @@
 				<span>Назад к сайту</span>
 				<span class="button__icon-wrap">
 					<svg width="14" height="14" class="button__icon">
-						<use href="./img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+						<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
 					</svg>
 				</span>
 			</button>

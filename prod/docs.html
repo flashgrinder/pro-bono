@@ -28,17 +28,61 @@
 </head>
 <body>
 <!-- Убираешь класс header--dark и меняет цвета на белый -->
-<header class="header js-header-mobile header--dark">
-    <button class="mobile-nav-btn burger js-mobile-nav-burger">
-        <div class="nav-icon burger__icon"></div>
-    </button>
+<header class="header js-header header--dark">
+    <div class="header__body">
+        <div class="header__inner d-flex flex-align-center flex-justify-sb">
+            <div class="header__logos d-flex flex-align-center">
+                <img src="./img/raiting.svg" alt="">
+                <img src="./img/logo.svg" alt="">
+            </div>
+            <nav class="header__menu menu">
+                <button class="header__button-mobile button button--text" data-hystmodal="#join">
+                    <span>Подать анкету</span>
+                    <span class="button__icon-wrap">
+                        <svg width="14" height="14" class="button__icon">
+                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+                        </svg>
+                    </span>
+                </button>
+                <ul class="header__menu-list menu__list">
+                    <li class="header__menu-item menu__item">
+                        <a href="" class="header__menu-link menu__link">
+                            экспертный совет
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="" class="header__menu-link menu__link">
+                            результаты рейтингов
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="" class="header__menu-link menu__link">
+                            новости
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="#" class="header__menu-link menu__link">
+                            контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__button-desktop button button--text" data-hystmodal="#join">
+                <span>Подать анкету</span>
+                <span class="button__icon-wrap">
+                    <svg width="14" height="14" class="button__icon">
+                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+                    </svg>
+                </span>
+            </button>
+            <div class="header__burger-wrap js-mobile-nav-burger">
+                <button class="mobile-nav-btn burger">
+                    <span class="nav-icon burger__icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
 </header>
-<div class="mobile-nav">
-    <ul class="mobile-nav__list">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="docs.html">Документация</a></li>
-    </ul>
-</div>
 
 <main>
     <main class="docs">
