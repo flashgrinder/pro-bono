@@ -1,7 +1,7 @@
 function initAcc(elem, option){
     document.addEventListener('click', function (e) {
-        // if (!e.target.matches(elem+' .js-accordion-title')) return;
-        // else{
+        if (!e.target.matches(elem+' .js-accordion-title')) return;
+        else{
             if(!e.target.parentElement.classList.contains('is-active')){
                 if(option===true){
                     let elementList = document.querySelectorAll(elem+' .js-accordion-item');
@@ -13,7 +13,7 @@ function initAcc(elem, option){
             }else{
                 e.target.parentElement.classList.remove('is-active');
             }
-        // }
+        }
     });
 }
 

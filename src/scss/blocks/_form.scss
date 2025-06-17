@@ -1,13 +1,10 @@
 .form__actions {
-  margin-top: 50px;
-  @include mobile {
-    margin-top: 32px;
-  }
+  margin-top: 10px;
 }
 
 .form__button {
   width: 100%;
-  margin-top: 24px;
+  margin-top: 50px;
 }
 
 .form__field {
@@ -122,19 +119,18 @@
 .form__accept-label {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 12px;
 }
 
 .form__accept-label::before {
   content: '';
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   flex-shrink: 0;
   flex-grow: 0;
   //margin-right: 0.5em;
-  border-radius: 2px;
+  border-radius: 4px;
   background-color: var(--white-bg);
   border: 1px solid #E5E5E5;
   background-repeat: no-repeat;
@@ -163,24 +159,24 @@
 }
 
 /* стили при наведении курсора на checkbox */
-.form__checkbox:not(:disabled):not(:checked)+.form__accept-label:hover::before {
+.form__checkbox:not(:disabled):not(:checked) + .form__accept-label:hover::before {
   border-color: var(--secondary-hover);
 }
 /* стили для активного состояния чекбокса (при нажатии на него) */
-.form__checkbox:not(:disabled):active+.form__accept-label::before {
+.form__checkbox:not(:disabled):active + .form__accept-label::before {
   background-color: #b3d7ff;
   border-color: var(--success-border);
 }
 /* стили для чекбокса, находящегося в фокусе */
-.form__checkbox:focus+.form__accept-label::before {
+.form__checkbox:focus + .form__accept-label::before {
   box-shadow: 0 0 0 0.1rem rgba(58, 175, 169, 0.25);
 }
 /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
-.form__checkbox:focus:not(:checked)+.form__accept-label::before {
+.form__checkbox:focus:not(:checked) + .form__accept-label::before {
   border-color: var(--success-border);
 }
 /* стили для чекбокса, находящегося в состоянии disabled */
-.form__checkbox:disabled+.form__accept-label::before {
+.form__checkbox:disabled + .form__accept-label::before {
   background-color: #e9ecef;
 }
 
@@ -194,165 +190,4 @@
 .form__field.is-error .form__input:focus,
 .form__field.is-error .form__input:target {
   border-color: var(--success-border);
-}
-
-/* Загрузка файлов */
-.form__files-wrap-title {
-  margin-bottom: 24px;
-}
-
-.form__dropzone .filepond--root {
-  min-height: 104px;
-}
-
-.form__dropzone .filepond--root .filepond--drop-label {
-  border: 2px dashed #699E4A80;
-  min-height: 104px;
-}
-
-.form__dropzone .filepond--root .is-error.filepond--drop-label {
-  border: 2px dashed var(--error-border);
-}
-
-.form__dropzone .filepond--drop-label.filepond--drop-label label {
-  line-height: inherit;
-}
-
-.form__dropzone .filepond--root .filepond--list-scroller {
-  margin-top: 3rem;
-}
-
-.form__dropzone .filepond--list.filepond--list {
-  left: 0;
-  right: 0;
-  top: 16px;
-}
-
-.form__dropzone .filepond--item {
-  margin: 16px 0 0;
-}
-
-.form__dropzone .filepond--file-info .filepond--file-info-sub,
-.form__dropzone .filepond--file-info .filepond--file-info-main {
-  font-size: 16px;
-  font-family: var(--font-main);
-  font-weight: 400;
-}
-
-.form__dropzone .filepond--file [data-align*=right] {
-  top: 50%;
-  transform: translateY(-50%) !important;
-}
-
-.form__dropzone .filepond--file-wrapper.filepond--file-wrapper {
-  background: var(--primary-bg);
-}
-
-.form__dropzone .filepond--file {
-  border: 1px solid var(--primary-font-color);
-  color: var(--primary-font-color);
-}
-
-.form__dropzone .filepond--file-action-button {
-  cursor: pointer;
-  background: transparent;
-}
-
-.form__dropzone .filepond--drip {
-  opacity: 1;
-  background: var(--primary-bg);
-}
-
-.form__dropzone-wrap {
-  gap: 24px;
-}
-
-.form__dropzone-wrap svg {
-  width: 56px;
-  min-width: 56px;
-}
-
-.form__dropzone-text-wrap .form__dropzone-text span:first-child {
-  color: var(--primary);
-  cursor: pointer;
-}
-
-.form__dropzone-text-wrap .form__dropzone-text span:last-child {
-  @include mobile {
-    display: none;
-  }
-}
-
-.form__dropzone-subtext {
-  margin-top: 10px;
-}
-
-/* Select */
-.ss-main.form__select {
-  --ss-border-radius: 8px;
-  padding: 17px 16px;
-  border-radius: var(--ss-border-radius);
-  border: 1px solid var(--disabled);
-  font-size: 16px;
-  @include mobile {
-    padding: 14px 12px 15px 16px;
-    font-size: 14px;
-  }
-}
-
-.ss-main.form__select:focus {
-  box-shadow: none;
-}
-
-.ss-main.form__select .ss-values .ss-placeholder {
-  color: var(--secondary-font-color);
-}
-
-.ss-main.form__select .ss-single {
-  color: var(--primary-font-color);
-}
-
-.ss-content.form__select .ss-list  .ss-option {
-  padding: 17px 16px;
-}
-
-.ss-content.form__select .ss-list .ss-option.ss-highlighted,
-.ss-content.form__select .ss-list .ss-option:not(.ss-disabled).ss-selected {
-  background-color: var(--primary);
-}
-
-.form__select.ss-content .ss-list .ss-option:hover {
-  background-color: var(--primary);
-}
-
-/* Form modal */
-.form.form--modal .form__wrapper-fields {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 32px;
-  grid-auto-columns: auto;
-  @include mobile {
-    gap: 24px;
-  }
-}
-
-.form.form--modal .form__field--industry,
-.form.form--modal .form__field--material {
-  @include mobile {
-    order: 1;
-  }
-}
-
-.form.form--modal .form__field--category,
-.form.form--modal .form__field--type {
-  @include mobile {
-    order: 4;
-  }
-}
-
-.form.form--modal .form__field:last-child {
-    grid-column: 2 span;
-  @include mobile {
-    grid-column: unset;
-  }
 }

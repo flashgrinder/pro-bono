@@ -19,13 +19,14 @@ document.addEventListener('DOMContentLoaded', ()=> {
     expertsItemsAnimation();
     pageHeadSliderInit();
     stepsAnimationsInit();
-
-    let accordions = document.querySelectorAll('.js-accordion');
-    if (accordions) {
-        for (let i = 1; i < accordions.length; i++) {
-            initAcc('.js-accordion-' + i, false);
-        }
-    }
+    initAcc(`.js-accordion-1`, true);
+    initAcc(`.js-accordion-2`, true);
+    // let accordions = document.querySelectorAll('.js-accordion');
+    // if (accordions) {
+    //     for (let i = 1; i < accordions.length; i++) {
+    //         initAcc(`.js-accordion${i}`, true);
+    //     }
+    // }
     initModal();
     Fancybox.bind('[data-fancybox]');
 

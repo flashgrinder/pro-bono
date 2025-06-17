@@ -44,16 +44,6 @@
 			<?php  endif; ?>
 			<?php wp_reset_query(); ?>
 		</div>
-		<div class="news__actions d-flex flex-justify-center">
-			<button class="button button--primary">
-				<span>Показать еще</span>
-				<span class="button__icon-wrap">
-                    <svg width="14" height="14" class="button__icon">
-                        <use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
-                    </svg>
-                </span>
-			</button>
-		</div>
 	</div>
 </section>
 <?php get_footer(); ?>
