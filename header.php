@@ -16,7 +16,7 @@
 			<div class="header__inner d-flex flex-align-center flex-justify-sb">
 				<div class="header__logos d-flex flex-align-center">
 					<a href="<?= home_url(); ?>"><img src="<?= STANDART_DIR; ?>img/raiting.svg" alt=""></a>
-					<img src="<?= STANDART_DIR; ?>img/logo.svg" alt="">
+					<a href="https://business-ombudsman.mos.ru/"><img src="<?= STANDART_DIR; ?>img/logo.svg" alt=""></a>
 				</div>
 				<nav class="header__menu menu">
 					<button class="header__button-mobile button button--text" data-hystmodal="#join">
