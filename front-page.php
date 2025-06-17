@@ -156,7 +156,7 @@
 					$steps_img = get_sub_field('steps_img');
 
 					?>
-					<div class="steps__card choice <?= ( get_row_index() == 1) ? 'expand' : 'small'; ?>">
+					<div class="steps__card choice <?= get_row_index() == 1 ? 'expand' : 'small'; ?>">
 						<div class="steps__card-body">
 							<div class="steps__card-plunk d-flex d-flex-column flex-justify-center flex-align-center">
 								<div class="steps__card-num-wrap d-flex flex-align-center">
