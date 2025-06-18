@@ -229,7 +229,7 @@
 							</svg>
 						</div>
 						<div class="criteria__doc-name text text--medium text--primary text--w-regular">
-							<?= $criteria_file['filename']; ?>
+							<?= $criteria_file['title']; ?>
 						</div>
 					</div>
 					<a href="<?= $criteria_file['url']; ?>" class="button button--primary" download>
@@ -399,7 +399,7 @@
 						</svg>
 					</div>
 					<div class="nominations__doc-name text text--medium text--primary text--w-regular">
-						<?= $file['filename']; ?>
+						<?= $file['title']; ?>
 					</div>
 				</div>
 				<a href="<?= $file['url']; ?>" class="nominations__button button button--primary" download>
