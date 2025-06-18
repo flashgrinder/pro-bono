@@ -143,7 +143,7 @@
 								<a href="<?= home_url(); ?>"><img src="<?= STANDART_DIR; ?>img/raiting.svg" alt=""></a>
 							</div>
 							<div class="footer__logo">
-								<a href="https://business-ombudsman.mos.ru/"><img src="<?= STANDART_DIR; ?>img/logo.svg" alt=""></a>
+								<a href="https://business-ombudsman.mos.ru/" target="_blank"><img src="<?= STANDART_DIR; ?>img/logo.svg" alt=""></a>
 							</div>
 						</div>
 						<?php
