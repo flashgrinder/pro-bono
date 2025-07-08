@@ -315,66 +315,6 @@
             "new_lines": "br"
         },
         {
-            "key": "field_684fff76b7c27",
-            "label": "Этап 3",
-            "name": "",
-            "aria-label": "",
-            "type": "accordion",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "open": 0,
-            "multi_expand": 0,
-            "endpoint": 0
-        },
-        {
-            "key": "field_684fff80b7c28",
-            "label": "Заголовок",
-            "name": "conditions-step-three_title",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "Количество анкет",
-            "maxlength": "",
-            "allow_in_bindings": 0,
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_684fff84b7c29",
-            "label": "Описание",
-            "name": "conditions-step-three_description",
-            "aria-label": "",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "Количество направляемых анкет не ограничено",
-            "maxlength": "",
-            "allow_in_bindings": 0,
-            "rows": "",
-            "placeholder": "",
-            "new_lines": "br"
-        },
-        {
             "key": "field_684ffe6b0453e",
             "label": "Разделитель",
             "name": "",
@@ -1327,5 +1267,5 @@
     "active": true,
     "description": "Настройки - Главная страница",
     "show_in_rest": 0,
-    "modified": 1750192312
+    "modified": 1751986305
 }

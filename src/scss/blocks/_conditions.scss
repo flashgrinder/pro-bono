@@ -46,25 +46,6 @@
 	}
 }
 
-.conditions__item:last-child {
-	grid-column: 1 / span 2;
-	gap: 148px;
-	@include tablet {
-		grid-column: unset;
-		gap: 88px;
-	}
-}
-
-.conditions__item:last-child .conditions__icon,
-.conditions__item:last-child .conditions__number {
-	background-color: #FFFFFF1A;
-}
-
-
-.conditions__item:last-child .conditions__item-description {
-	opacity: .5;
-}
-
 .conditions__item-top {
 	gap: 2px;
 }

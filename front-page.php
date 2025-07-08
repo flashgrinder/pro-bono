@@ -78,9 +78,6 @@
 								<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#book"></use>
 							</svg>
 						</div>
-						<div class="conditions__number text text--pre-large text--primary text--w-regular d-flex flex-align-center flex-justify-center">
-							01
-						</div>
 					</div>
 					<div class="conditions__item-info">
 						<div class="conditions__item-title text text--large text--primary text--w-bold">
@@ -98,9 +95,6 @@
 								<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#anketa"></use>
 							</svg>
 						</div>
-						<div class="conditions__number text text--pre-large text--primary text--w-regular d-flex flex-align-center flex-justify-center">
-							02
-						</div>
 					</div>
 					<div class="conditions__item-info">
 						<div class="conditions__item-title text text--large text--primary text--w-bold">
@@ -108,26 +102,6 @@
 						</div>
 						<div class="conditions__item-description text text--medium text--primary text--w-regular">
 							<?php the_field('conditions-step-two_description'); ?>
-						</div>
-					</div>
-				</div>
-				<div class="conditions__item dark-bg">
-					<div class="conditions__item-top d-flex">
-						<div class="conditions__icon d-flex flex-align-center flex-justify-center">
-							<svg width="24px" height="24px">
-								<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#status"></use>
-							</svg>
-						</div>
-						<div class="conditions__number text text--pre-large text--white text--w-regular d-flex flex-align-center flex-justify-center">
-							03
-						</div>
-					</div>
-					<div class="conditions__item-info">
-						<div class="conditions__item-title text text--large text--white text--w-bold">
-							<?php the_field('conditions-step-three_title'); ?>
-						</div>
-						<div class="conditions__item-description text text--medium text--white text--w-regular">
-							<?php the_field('conditions-step-three_description'); ?>
 						</div>
 					</div>
 				</div>

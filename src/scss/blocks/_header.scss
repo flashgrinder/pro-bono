@@ -134,6 +134,8 @@
 	}
 }
 
-//.header__menu-item.menu__item {
-//	padding: 10px 0;
-//}
+.header__menu-item.menu__item {
+	@include tablet {
+		padding: 10px 0;
+	}
+}
