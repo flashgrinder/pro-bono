@@ -29,7 +29,7 @@
 					</button>
 					<?php
 						wp_nav_menu([
-							'theme_location'  => 'footer-menu',
+							'theme_location'  => 'header-menu',
 							'container'       => '',
 							'container_class' => '',
 							'menu_class'      => '',
