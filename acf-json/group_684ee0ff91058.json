@@ -313,11 +313,11 @@
             "selected": 0
         },
         {
-            "key": "field_684eef4195a2d",
+            "key": "field_686fc8b5be620",
             "label": "Победители специальных номинаций",
-            "name": "experts_special",
+            "name": "result-blocks-special",
             "aria-label": "",
-            "type": "post_object",
+            "type": "flexible_content",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -326,18 +326,69 @@
                 "class": "",
                 "id": ""
             },
-            "post_type": [
-                "experts"
-            ],
-            "post_status": "",
-            "taxonomy": "",
-            "return_format": "object",
-            "multiple": 1,
-            "allow_null": 0,
-            "allow_in_bindings": 0,
-            "bidirectional": 0,
-            "ui": 1,
-            "bidirectional_target": []
+            "layouts": {
+                "layout_684ee96941806": {
+                    "key": "layout_684ee96941806",
+                    "name": "result-block_special",
+                    "label": "Номинация и победители",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_686fc8b5be625",
+                            "label": "Название номинации",
+                            "name": "title_special",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_686fc8b5be626",
+                            "label": "Победители",
+                            "name": "experts_special",
+                            "aria-label": "",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "experts"
+                            ],
+                            "post_status": "",
+                            "taxonomy": "",
+                            "return_format": "object",
+                            "multiple": 1,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "bidirectional": 0,
+                            "ui": 1,
+                            "bidirectional_target": []
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Добавить"
         },
         {
             "key": "field_684ef8ba528c1",
@@ -403,5 +454,5 @@
     "active": true,
     "description": "Настройки - Результаты рейтинга",
     "show_in_rest": 0,
-    "modified": 1750006013
+    "modified": 1752156686
 }

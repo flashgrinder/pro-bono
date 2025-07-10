@@ -148,62 +148,74 @@
 	</div>
 </section>
 
-<?php $experts_special = get_field('experts_special'); ?>
-<?php if( $experts_special ): ?>
+
+<?php if( have_rows('result-blocks-special')): ?>
 <section class="experts experts--winners b-padding-70">
 	<div class="experts__body container">
 		<h3 class="experts__heading title title--big title--primary title--w-bold title--indent text-center">
 			Победители специальных номинаций
 		</h3>
-		<div class="experts__items">
-			<?php foreach( $experts_special as $post): ?>
-				<?php setup_postdata($post); ?>
-				<div class="experts__item white-bg js-expert-item">
-					<div class="experts__item-pic">
-						<?php
-							$default_attr = [
-								'alt'   => get_the_title()
-							];
+		<?php while( have_rows('result-blocks-special')) : the_row(); ?>
 
-							echo get_the_post_thumbnail( $post->ID, 'full', $default_attr );
-						?>
-						<div class="experts__item-tooltip text text--tiny text--primary text--w-medium text-center">
-							Нажмите на карточку, чтобы посмотреть цитату эксперта
-						</div>
-						<?php
-							$categories = get_the_terms($post->ID, 'cats_experts');
+			<?php if( get_row_layout() == 'result-block_special' ): ?>
+					<div class="experts__achievements" style="margin-top: 60px">
+						<h4 class="experts__result-name text text--medium text--primary text--w-medium">
+							<?= get_sub_field('title_special'); ?>
+						</h4>
+							<div class="experts__items" style="margin-top: 0">
+								<?php $experts_special = get_sub_field('experts_special'); ?>
+								<?php foreach( $experts_special as $post): ?>
+									<?php setup_postdata($post); ?>
+									<div class="experts__item white-bg js-expert-item">
+										<div class="experts__item-pic">
+											<?php
+												$default_attr = [
+													'alt'   => get_the_title()
+												];
 
-							if( $categories[0] ) {
-								echo '<div class="experts__item-tag tag text text--tiny text--primary text--w-medium text-center">' . $categories[0]->name . '</div>';
-							}
-						?>
+												echo get_the_post_thumbnail( $post->ID, 'full', $default_attr );
+											?>
+											<div class="experts__item-tooltip text text--tiny text--primary text--w-medium text-center">
+												Нажмите на карточку, чтобы посмотреть цитату эксперта
+											</div>
+											<?php
+												$categories = get_the_terms($post->ID, 'cats_experts');
+
+												if( $categories[0] ) {
+													echo '<div class="experts__item-tag tag text text--tiny text--primary text--w-medium text-center">' . $categories[0]->name . '</div>';
+												}
+											?>
+										</div>
+										<div class="experts__item-info">
+											<div class="experts__item-name text text--primary text--w-bold">
+												<?php the_title(); ?>
+											</div>
+											<div class="experts__item-position text text--small text--primary text--w-regular">
+												<?php the_field('expert_position'); ?>
+											</div>
+											<?php $expert_case = get_field('expert_case'); ?>
+											<?php if (!empty($expert_case)) : ?>
+												<a href="<?= $expert_case; ?>" class="experts__item-button button button--text">
+													<span>Смотреть кейс</span>
+													<span class="button__icon-wrap">
+							                            <svg width="14" height="14" class="button__icon">
+							                                <use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+							                            </svg>
+							                        </span>
+												</a>
+											<?php endif;?>
+										</div>
+										<div class="experts__item-phrase text text--pre-medium text--primary text--w-medium text-center">
+											“<?php the_field('expert_quote'); ?>”
+										</div>
+									</div>
+								<?php endforeach; ?>
+								<?php wp_reset_postdata(); ?>
+							</div>
 					</div>
-					<div class="experts__item-info">
-						<div class="experts__item-name text text--primary text--w-bold">
-							<?php the_title(); ?>
-						</div>
-						<div class="experts__item-position text text--small text--primary text--w-regular">
-							<?php the_field('expert_position'); ?>
-						</div>
-						<?php $expert_case = get_field('expert_case'); ?>
-						<?php if (!empty($expert_case)) : ?>
-							<a href="<?= $expert_case; ?>" class="experts__item-button button button--text">
-								<span>Смотреть кейс</span>
-								<span class="button__icon-wrap">
-		                            <svg width="14" height="14" class="button__icon">
-		                                <use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
-		                            </svg>
-		                        </span>
-							</a>
-						<?php endif;?>
-					</div>
-					<div class="experts__item-phrase text text--pre-medium text--primary text--w-medium text-center">
-						“<?php the_field('expert_quote'); ?>”
-					</div>
-				</div>
-			<?php endforeach; ?>
-			<?php wp_reset_postdata(); ?>
-		</div>
+			<?php endif; ?>
+
+		<?php endwhile; ?>
 	</div>
 </section>
 <?php endif;?>

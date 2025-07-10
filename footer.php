@@ -10,10 +10,12 @@
 					<img src="<?= STANDART_DIR; ?>img/raiting.svg" alt="">
 				</div>
 				<div class="modal__title text text--large text--primary text--w-bold text-center">
-					Задать вопрос
+					<?php $title_form_question = get_field('title_form_question', 'option'); ?>
+					<?= $title_form_question; ?>
 				</div>
 				<div class="modal__subtitle text text--small text--primary text--w-regular text-center">
-					Если у вас возник вопрос или нужна обратная связь от представителей конкурса, заполните форму ниже
+					<?php $subtitle_form_question = get_field('subtitle_form_question', 'option'); ?>
+					<?= $subtitle_form_question; ?>
 				</div>
 			</div>
 			<?php echo do_shortcode( '[contact-form-7 title="Задать вопрос" html_class="main-form__form form form--modal js-form-1"]' ); ?>
@@ -30,10 +32,12 @@
 					<img src="<?= STANDART_DIR; ?>img/raiting.svg" alt="">
 				</div>
 				<div class="modal__title text text--large text--primary text--w-bold text-center">
-					Принять участие в церемонии
+					<?php $title_form_join = get_field('title_form_join', 'option'); ?>
+					<?= $title_form_question; ?>
 				</div>
 				<div class="modal__subtitle text text--small text--primary text--w-regular text-center">
-					Чтобы посетить мероприятие награждения, оставьте свои контактные данные в форме ниже. Мы отправим билет на почту
+					<?php $subtitle_form_join = get_field('subtitle_form_join', 'option'); ?>
+					<?= $subtitle_form_join; ?>
 				</div>
 			</div>
 			<?php echo do_shortcode( '[contact-form-7 title="Принять участие" html_class="main-form__form form form--modal js-form-2"]' ); ?>
