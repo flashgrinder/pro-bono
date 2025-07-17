@@ -19,14 +19,26 @@
 					<a href="https://business-ombudsman.mos.ru/" target="_blank"><img src="<?= STANDART_DIR; ?>img/logo.svg" alt=""></a>
 				</div>
 				<nav class="header__menu menu">
-					<button class="header__button-mobile button button--text" data-hystmodal="#join">
-						<span>Подать анкету</span>
-						<span class="button__icon-wrap">
-							<svg width="14" height="14" class="button__icon">
-								<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
-							</svg>
-						</span>
-					</button>
+					<?php $link_anketa = get_field('link_anketa', 'option'); ?>
+					<?php if (!empty($link_anketa)) : ?>
+						<a href="<?= $link_anketa; ?>" class="header__button-mobile button button--text" target="_blank">
+							<span>Подать анкету</span>
+							<span class="button__icon-wrap">
+								<svg width="14" height="14" class="button__icon">
+									<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+								</svg>
+							</span>
+						</a>
+					<?php else : ?>
+						<button class="header__button-mobile button button--text" data-hystmodal="#join">
+							<span>Подать анкету</span>
+							<span class="button__icon-wrap">
+								<svg width="14" height="14" class="button__icon">
+									<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+								</svg>
+							</span>
+						</button>
+					<?php endif; ?>
 					<?php
 						wp_nav_menu([
 							'theme_location'  => 'header-menu',
@@ -37,14 +49,25 @@
 						]);
 					?>
 				</nav>
-				<button class="header__button-desktop button button--text" data-hystmodal="#join">
-					<span>Подать анкету</span>
-					<span class="button__icon-wrap">
-						<svg width="14" height="14" class="button__icon">
-							<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
-						</svg>
-					</span>
-				</button>
+				<?php if (!empty($link_anketa)) : ?>
+					<a href="<?= $link_anketa; ?>" class="header__button-desktop button button--text">
+						<span>Подать анкету</span>
+						<span class="button__icon-wrap">
+							<svg width="14" height="14" class="button__icon">
+								<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+							</svg>
+						</span>
+					</a>
+				<?php else : ?>
+					<button class="header__button-desktop button button--text" data-hystmodal="#join">
+						<span>Подать анкету</span>
+						<span class="button__icon-wrap">
+							<svg width="14" height="14" class="button__icon">
+								<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+							</svg>
+						</span>
+					</button>
+				<?php endif; ?>
 				<div class="header__burger-wrap js-mobile-nav-burger">
 					<button class="mobile-nav-btn burger">
 						<span class="nav-icon burger__icon"></span>

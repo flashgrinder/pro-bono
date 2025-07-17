@@ -386,15 +386,27 @@
 				</a>
 			</div>
 		<?php endif; ?>
-		<div class="nominations__actions d-flex flex-align-center flex-justify-center" data-hystmodal="#join">
-			<button class="nominations__button button button--primary">
-				<span>Подать анкету</span>
-				<span class="button__icon-wrap">
-					<svg width="14" height="14" class="button__icon">
-						<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
-					</svg>
-				</span>
-			</button>
+		<div class="nominations__actions d-flex flex-align-center flex-justify-center">
+			<?php $link_anketa = get_field('link_anketa', 'option'); ?>
+			<?php if (!empty($link_anketa)) : ?>
+				<a href="<?= $link_anketa; ?>" class="nominations__button button button--primary" target="_blank">
+					<span>Подать анкету</span>
+					<span class="button__icon-wrap">
+						<svg width="14" height="14" class="button__icon">
+							<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+						</svg>
+					</span>
+				</a>
+			<?php else : ?>
+				<button class="nominations__button button button--primary" data-hystmodal="#join">
+					<span>Подать анкету</span>
+					<span class="button__icon-wrap">
+						<svg width="14" height="14" class="button__icon">
+							<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+						</svg>
+					</span>
+				</button>
+			<?php endif; ?>
 			<button class="nominations__button button button--primary" data-hystmodal="#feedback">
 				<span>Задать вопрос</span>
 				<span class="button__icon-wrap">
@@ -468,14 +480,26 @@
 			<?= $result_raiting; ?>
 		</h3>
 		<div class="info__actions d-flex flex-justify-center">
-			<button class="button button--primary" data-hystmodal="#join">
-				<span>Подать заявку</span>
-				<span class="button__icon-wrap">
-	                <svg width="14" height="14" class="button__icon">
-	                    <use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
-	                </svg>
-	            </span>
-			</button>
+			<?php $link_anketa = get_field('link_anketa', 'option'); ?>
+			<?php if (!empty($link_anketa)) : ?>
+				<a href="<?= $link_anketa; ?>" class="button button--primary" target="_blank">
+					<span>Подать анкету</span>
+					<span class="button__icon-wrap">
+						<svg width="14" height="14" class="button__icon">
+							<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+						</svg>
+					</span>
+				</a>
+			<?php else : ?>
+				<button class="button button--primary" data-hystmodal="#join">
+					<span>Подать заявку</span>
+					<span class="button__icon-wrap">
+		                <svg width="14" height="14" class="button__icon">
+		                    <use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+		                </svg>
+		            </span>
+				</button>
+			<?php endif; ?>
 		</div>
 	</div>
 </section>

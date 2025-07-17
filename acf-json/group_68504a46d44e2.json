@@ -228,6 +228,24 @@
             "rows": "",
             "placeholder": "",
             "new_lines": ""
+        },
+        {
+            "key": "field_68791b86d821a",
+            "label": "Ссылка",
+            "name": "link_anketa",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "Если не указана ссылка, отображается кнопка вызова формы обратной связи.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "placeholder": ""
         }
     ],
     "location": [
@@ -248,5 +266,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1752157328
+    "modified": 1752767426
 }
