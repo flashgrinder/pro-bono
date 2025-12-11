@@ -89,6 +89,33 @@
                     "parent_repeater": "field_684ee2225836b"
                 },
                 {
+                    "key": "field_693b0943951f9",
+                    "label": "Изображение(для мобильных)",
+                    "name": "result-slider_img-mobile",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "full",
+                    "parent_repeater": "field_684ee2225836b"
+                },
+                {
                     "key": "field_684ee2845836e",
                     "label": "Заголовок",
                     "name": "result-slider_title",
@@ -391,6 +418,87 @@
             "button_label": "Добавить"
         },
         {
+            "key": "field_693b0a080dc67",
+            "label": "Таблица с рейтингом Pro Bono",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_693b0a2a0dc68",
+            "label": "Название блока",
+            "name": "nominations-table_title",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "300 Экспертов Pro bono",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": "",
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_693b0b2b0dc69",
+            "label": "Короткое описание блока",
+            "name": "nominations-table_subtitle",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Экспертный совет вправе включить любого участника Рейтинга в одну из специальных номинаций",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": "",
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_693b0c100dc6a",
+            "label": "Документ со списком экспертов",
+            "name": "nominations-table_doc",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0
+        },
+        {
             "key": "field_684ef8ba528c1",
             "label": "Блок - Кейсы, которые отметили эксперты",
             "name": "",
@@ -454,5 +562,6 @@
     "active": true,
     "description": "Настройки - Результаты рейтинга",
     "show_in_rest": 0,
-    "modified": 1752156686
+    "display_title": "",
+    "modified": 1765477453
 }

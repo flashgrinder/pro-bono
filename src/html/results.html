@@ -8,6 +8,7 @@
 					<div class="page-head__splide-slide splide__slide">
 						<div class="page-head__pic">
 							<picture>
+								<source media="(max-width: 768px)" srcset="./img/other/result-slide-1.jpg">
 								<img src="./img/other/result-slide-1.jpg" alt="">
 							</picture>
 						</div>
@@ -486,6 +487,74 @@
 	</div>
 </section>
 
+<section class="nominations nominations--table b-padding-70">
+	<div class="nominations__body container">
+		<h3 class="nominations__heading title title--big title--primary title--w-bold title--indent text-center">
+			300 Экспертов Pro bono
+		</h3>
+		<p class="nominations__subtitle text text--medium text--primary text--w-regular text-center">
+			Экспертный совет вправе включить любого участника Рейтинга в одну из специальных номинаций
+		</p>
+		<div class="nominations__table-wrap">
+			<input class="nominations__table-search" type="text" id="searchSurname" placeholder="Поиск по фамилии..." />
+			<div class="nominations__table" id="nominationsTable">
+				<div class="nominations__table-item">
+					<div class="nominations__table-item-result text text--medium text--primary text--w-medium">
+						Лучшая инициатива года
+					</div>
+					<div class="nominations__table-item-name text text--medium text--primary text--w-medium">
+						Иваов Иван Иванович
+					</div>
+				</div>
+				<div class="nominations__table-item">
+					<div class="nominations__table-item-result text text--medium text--primary text--w-medium">
+						Рейтинг
+					</div>
+					<div class="nominations__table-item-name text text--medium text--primary text--w-medium">
+						Александров Алексей Иванович
+					</div>
+				</div>
+				<div class="nominations__table-item">
+					<div class="nominations__table-item-result text text--medium text--primary text--w-medium">
+						Юридический эксперт
+					</div>
+					<div class="nominations__table-item-name text text--medium text--primary text--w-medium">
+						Балабанов Константин Константинович
+					</div>
+				</div>
+				<div class="nominations__table-item">
+					<div class="nominations__table-item-result text text--medium text--primary text--w-medium">
+						Лучшая инициатива года
+					</div>
+					<div class="nominations__table-item-name text text--medium text--primary text--w-medium">
+						Иваненко Георгий Георгиевич
+					</div>
+				</div>
+			</div>
+			<div id="noResultsMessage" class="nominations__table-no-result text text--medium text--primary text--w-medium">Ничего не найдено</div>
+		</div>
+		<div class="nominations__doc white-bg d-flex flex-align-center flex-justify-sb">
+			<div class="nominations__doc-inner d-flex flex-align-center">
+				<div class="nominations__doc-icon d-flex flex-align-center flex-justify-center">
+					<svg width="24" height="24">
+						<use href="./img/svgsprite/sprite.symbol.svg#docx"></use>
+					</svg>
+				</div>
+				<div class="nominations__doc-name text text--medium text--primary text--w-regular">
+					300 Экспертов Probono.xlsx
+				</div>
+			</div>
+			<a class="nominations__button button button--primary" download>
+				<span>Скачать документ</span>
+				<span class="button__icon-wrap">
+					<svg width="14" height="14" class="button__icon">
+						<use href="./img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+	</div>
+</section>
 
 <section class="experts experts--cases b-padding-70">
 	<div class="experts__body container">

@@ -79,6 +79,7 @@
                     <div class="page-head__splide-slide splide__slide">
                         <div class="page-head__pic">
                             <picture>
+                                <source media="(max-width: 768px)" srcset="./img/other/result-slide-1.jpg">
                                 <img src="./img/other/result-slide-1.jpg" alt="">
                             </picture>
                         </div>
@@ -557,6 +558,75 @@
     </div>
 </section>
 
+<section class="nominations nominations--table b-padding-70">
+    <div class="nominations__body container">
+        <h3 class="nominations__heading title title--big title--primary title--w-bold title--indent text-center">
+            300 Экспертов Pro bono
+        </h3>
+        <p class="nominations__subtitle text text--medium text--primary text--w-regular text-center">
+            Экспертный совет вправе включить любого участника Рейтинга в&#160;одну из&#160;специальных номинаций
+        </p>
+        <div class="nominations__table-wrap">
+            <input class="nominations__table-search" type="text" id="searchSurname" placeholder="Поиск по фамилии..." />
+            <div class="nominations__table" id="nominationsTable">
+                <div class="nominations__table-item">
+                    <div class="nominations__table-item-result text text--medium text--primary text--w-medium">
+                        Лучшая инициатива года
+                    </div>
+                    <div class="nominations__table-item-name text text--medium text--primary text--w-medium">
+                        Иваов Иван Иванович
+                    </div>
+                </div>
+                <div class="nominations__table-item">
+                    <div class="nominations__table-item-result text text--medium text--primary text--w-medium">
+                        Рейтинг
+                    </div>
+                    <div class="nominations__table-item-name text text--medium text--primary text--w-medium">
+                        Александров Алексей Иванович
+                    </div>
+                </div>
+                <div class="nominations__table-item">
+                    <div class="nominations__table-item-result text text--medium text--primary text--w-medium">
+                        Юридический эксперт
+                    </div>
+                    <div class="nominations__table-item-name text text--medium text--primary text--w-medium">
+                        Балабанов Константин Константинович
+                    </div>
+                </div>
+                <div class="nominations__table-item">
+                    <div class="nominations__table-item-result text text--medium text--primary text--w-medium">
+                        Лучшая инициатива года
+                    </div>
+                    <div class="nominations__table-item-name text text--medium text--primary text--w-medium">
+                        Иваненко Георгий Георгиевич
+                    </div>
+                </div>
+            </div>
+            <div id="noResultsMessage" class="nominations__table-no-result text text--medium text--primary text--w-medium">Ничего не&#160;найдено</div>
+        </div>
+        <div class="nominations__doc white-bg d-flex flex-align-center flex-justify-sb">
+            <div class="nominations__doc-inner d-flex flex-align-center">
+                <div class="nominations__doc-icon d-flex flex-align-center flex-justify-center">
+                    <svg width="24" height="24">
+                        <use href="./img/svgsprite/sprite.symbol.svg#docx"></use>
+                    </svg>
+                </div>
+                <div class="nominations__doc-name text text--medium text--primary text--w-regular">
+                    300 Экспертов Probono.xlsx
+                </div>
+            </div>
+            <a class="nominations__button button button--primary" download>
+                <span>Скачать документ</span>
+                <span class="button__icon-wrap">
+                    <svg width="14" height="14" class="button__icon">
+                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+                    </svg>
+                </span>
+            </a>
+        </div>
+    </div>
+</section>
+
 <section class="experts experts--cases b-padding-70">
     <div class="experts__body container">
         <h3 class="experts__heading title title--big title--primary title--w-bold title--indent text-center">
@@ -687,7 +757,7 @@
                     Задать вопрос
                 </div>
                 <div class="modal__subtitle text text--small text--primary text--w-regular text-center">
-                    Если у&#160;вас возник вопрос или нужна обратная связь от&#160;представителей конкурса, заполните форму ниже
+                    Если&#160;у&#160;вас возник вопрос или&#160;нужна обратная связь от&#160;представителей конкурса, заполните форму ниже
                 </div>
             </div>
             <form action="./upload/" class="main-form__form form form--modal js-form-1"
@@ -883,10 +953,10 @@
             Мы&#160;используем файлы cookies
         </div>
         <div class="cookie-notifier__text text text--tiny text--primary text--w-regular">
-            Для улучшения работы сайта. Подробнее&#160;&#8212; в&#160;<a class="cookie-notifier_policy" href="">Политике обработки персональных данных</a>. Продолжая пользоваться сайтом, Вы&#160;даёте согласие на&#160;использование файлов cookies.
+            Для&#160;улучшения работы сайта. Подробнее&#160;&#8212; в&#160;<a class="cookie-notifier_policy" href="">Политике обработки персональных данных</a>. Продолжая пользоваться сайтом, Вы&#160;даёте согласие на&#160;использование файлов cookies.
         </div>
         <div class="cookie-notifier__excerpt text text--tiny text--primary text--w-regular">
-            Если Вы&#160;не&#160;согласны на&#160;использование файлов cookies, Вам необходимо установить специальные настройки в&#160;браузере или покинуть сайт
+            Если&#160;Вы&#160;не&#160;согласны на&#160;использование файлов cookies, Вам необходимо установить специальные настройки в&#160;браузере или&#160;покинуть сайт
         </div>
     </div>
     <div class="cookie-notifier__btn">

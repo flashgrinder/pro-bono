@@ -10,6 +10,7 @@ import initModal from "./modules/modals-form";
 import headerHideInit from "./modules/hideMenu";
 import stepsAnimationsInit from "./modules/steps-animation";
 import initCookie from "./modules/cookie";
+import searchSurnameTable from "./modules/searchSurnameTable";
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     initAcc(`.js-accordion-1`, true);
     initAcc(`.js-accordion-2`, true);
     initCookie();
+    searchSurnameTable();
     // let accordions = document.querySelectorAll('.js-accordion');
     // if (accordions) {
     //     for (let i = 1; i < accordions.length; i++) {
