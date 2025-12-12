@@ -121,3 +121,11 @@
 		right: 10px;
 	}
 }
+
+.page-head.page-head--slider-result .page-head__body {
+	max-height: 100%;
+}
+
+.page-head.page-head--slider-result .page-head__splide-slide {
+	aspect-ratio: 12/9;
+}
