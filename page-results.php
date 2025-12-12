@@ -3,9 +3,9 @@
 
 <?php the_post(); ?>
 <?php if( have_rows('result-slider') ): ?>
-<section class="page-head page-head--slider">
+<section class="page-head page-head--slider page-head--slider-result">
 	<div class="page-head__body container-full">
-		<div class="page-head__splide splide js-page-head-slider">
+		<div class="page-head__splide splide js-page-head-slider-result">
 			<div class="page-head__splide-track splide__track">
 				<div class="page-head__splide-list splide__list">
 					<?php while( have_rows('result-slider') ): the_row();
