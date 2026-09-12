@@ -169,9 +169,11 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   min-height: 50px;
   padding: 12px 26px;
   color: var(--red-font-color);
+  background-color: transparent !important;
   font-size: 20px;
   line-height: 1;
   text-decoration: none;
@@ -180,11 +182,23 @@
   transition: background .3s ease-out, color .3s ease-out, border .3s ease-out;
 }
 
+.wysiwyg .wp-block-button__link::after {
+  content: '↗';
+  font-size: 16px;
+  line-height: 1;
+  transition: transform var(--hover-time) ease-out;
+}
+
 .wysiwyg .wp-block-button__link:hover,
 .wysiwyg .wp-block-button__link:focus {
   color: var(--white-font-color);
-  background-color: var(--primary);
+  background-color: var(--primary) !important;
   border-color: var(--primary);
+}
+
+.wysiwyg .wp-block-button__link:hover::after,
+.wysiwyg .wp-block-button__link:focus::after {
+  transform: rotate(45deg);
 }
 
 @include mobile {
