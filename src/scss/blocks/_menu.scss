@@ -15,7 +15,7 @@
   padding: 10px 12px;
 }
 
-.menu__item:hover .menu__link {
+.menu__item:hover > .menu__link {
   color: var(--primary);
   text-decoration: underline;
 }
