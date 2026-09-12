@@ -25,3 +25,79 @@
   color: var(--primary-font-color);
   transition: color var(--hover-time) ease-in-out, text-decoration var(--hover-time) ease-in-out;
 }
+
+.menu__item.menu-item-has-children > .menu__link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu__item.menu-item-has-children > .menu__link::after {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform var(--hover-time) ease-in-out;
+}
+
+.menu__sub-menu {
+  position: absolute;
+  bottom: calc(100% + 20px);
+  left: 50%;
+  min-width: max-content;
+  margin: 0;
+  padding: 12px;
+  list-style: none;
+  background-color: #FFFFFFCC;
+  backdrop-filter: blur(45px);
+  box-shadow: var(--small-shadow);
+  border-radius: 16px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, 10px);
+  transition: opacity var(--hover-time) ease-in-out,
+              visibility var(--hover-time) ease-in-out,
+              transform var(--hover-time) ease-in-out;
+}
+
+.menu__sub-menu .menu__item {
+  padding: 8px 10px;
+}
+
+.menu__item.menu-item-has-children:hover > .menu__sub-menu,
+.menu__item.menu-item-has-children:focus-within > .menu__sub-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+
+.menu__item.menu-item-has-children:hover > .menu__link::after,
+.menu__item.menu-item-has-children:focus-within > .menu__link::after {
+  transform: rotate(225deg) translate(-2px, 0);
+}
+
+@include tablet {
+  .menu__sub-menu {
+    position: static;
+    display: none;
+    min-width: 0;
+    margin-top: 10px;
+    padding: 0 0 0 20px;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .menu__item.menu-item-has-children.is-open > .menu__sub-menu {
+    display: block;
+  }
+
+  .menu__item.menu-item-has-children.is-open > .menu__link::after {
+    transform: rotate(225deg) translate(-2px, 0);
+  }
+}

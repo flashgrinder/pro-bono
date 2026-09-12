@@ -1,6 +1,7 @@
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import mobileNav from './modules/mobile-nav.js';
+import menuInit from './modules/menu';
 import mainScreenSliderInit from "./modules/main-screen-slider";
 import newsSliderInit from "./modules/news-slider";
 import expertsItemsAnimation from "./modules/animation-experts-items";
@@ -15,6 +16,7 @@ import searchSurnameTable from "./modules/searchSurnameTable";
 document.addEventListener('DOMContentLoaded', ()=> {
 
     mobileNav();
+    menuInit();
     headerHideInit();
     mainScreenSliderInit();
     newsSliderInit();
