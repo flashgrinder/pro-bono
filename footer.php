@@ -177,9 +177,10 @@
 					<div class="footer__col">
 						<div class="footer__actions d-flex d-flex-column">
 							<?php $link_anketa = get_field('link_anketa', 'option'); ?>
+							<?php $button_anketa_text = get_field('button_anketa_text', 'option') ?: 'Подать анкету'; ?>
 							<?php if (!empty($link_anketa)) : ?>
 								<a href="<?=$link_anketa  ?>" class="button button--text" target="_blank">
-									<span>Подать заявку</span>
+									<span><?= esc_html($button_anketa_text); ?></span>
 									<span class="button__icon-wrap">
 										<svg width="14" height="14" class="button__icon">
 											<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
@@ -188,7 +189,7 @@
 								</a>
 							<?php else : ?>
 								<button class="button button--text" data-hystmodal="#join">
-									<span>Подать заявку</span>
+									<span><?= esc_html($button_anketa_text); ?></span>
 									<span class="button__icon-wrap">
 										<svg width="14" height="14" class="button__icon">
 											<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>

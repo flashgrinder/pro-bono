@@ -246,6 +246,27 @@
             "default_value": "",
             "allow_in_bindings": 0,
             "placeholder": ""
+        },
+        {
+            "key": "field_68c3e9a1b2d4f",
+            "label": "Текст кнопки «Подать заявку/анкету»",
+            "name": "button_anketa_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Используется во всех кнопках подачи заявки и анкеты.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Подать анкету",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [

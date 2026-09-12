@@ -388,9 +388,10 @@
 		<?php endif; ?>
 		<div class="nominations__actions d-flex flex-align-center flex-justify-center">
 			<?php $link_anketa = get_field('link_anketa', 'option'); ?>
+			<?php $button_anketa_text = get_field('button_anketa_text', 'option') ?: 'Подать анкету'; ?>
 			<?php if (!empty($link_anketa)) : ?>
 				<a href="<?= $link_anketa; ?>" class="nominations__button button button--primary" target="_blank">
-					<span>Подать анкету</span>
+					<span><?= esc_html($button_anketa_text); ?></span>
 					<span class="button__icon-wrap">
 						<svg width="14" height="14" class="button__icon">
 							<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
@@ -399,7 +400,7 @@
 				</a>
 			<?php else : ?>
 				<button class="nominations__button button button--primary" data-hystmodal="#join">
-					<span>Подать анкету</span>
+					<span><?= esc_html($button_anketa_text); ?></span>
 					<span class="button__icon-wrap">
 						<svg width="14" height="14" class="button__icon">
 							<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
@@ -481,9 +482,10 @@
 		</h3>
 		<div class="info__actions d-flex flex-justify-center">
 			<?php $link_anketa = get_field('link_anketa', 'option'); ?>
+			<?php $button_anketa_text = get_field('button_anketa_text', 'option') ?: 'Подать анкету'; ?>
 			<?php if (!empty($link_anketa)) : ?>
 				<a href="<?= $link_anketa; ?>" class="button button--primary" target="_blank">
-					<span>Подать анкету</span>
+					<span><?= esc_html($button_anketa_text); ?></span>
 					<span class="button__icon-wrap">
 						<svg width="14" height="14" class="button__icon">
 							<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
@@ -492,7 +494,7 @@
 				</a>
 			<?php else : ?>
 				<button class="button button--primary" data-hystmodal="#join">
-					<span>Подать заявку</span>
+					<span><?= esc_html($button_anketa_text); ?></span>
 					<span class="button__icon-wrap">
 		                <svg width="14" height="14" class="button__icon">
 		                    <use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
