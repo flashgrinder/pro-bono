@@ -16,13 +16,13 @@
 				'parent_item_colon'  => '',
 				'menu_name'          => 'Кейсы'
 			],
-			'public'             => false,
+			'public'             => true,
 			'show_ui'            => true,
 			'show_in_rest'       => true,
 			'menu_position'      => 5,
 			'menu_icon'          => 'dashicons-media-document',
-			'supports'           => ['title','thumbnail','author','custom-fields'],
-			'has_archive'        => false,
+			'supports'           => ['title', 'editor', 'thumbnail', 'author', 'custom-fields'],
+			'has_archive'        => 'cases',
 			'hierarchical'        => false,
 			'rewrite'             => array('slug' => 'cases', 'with_front' => false),
 			'query_var'           => true

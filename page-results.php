@@ -304,50 +304,8 @@
 		<div class="experts__items">
 		<?php foreach( $experts_cases as $post): ?>
 			<?php setup_postdata($post); ?>
-				<div class="experts__item white-bg">
-					<div class="experts__item-pic">
-						<?php
-							$default_attr = [
-								'alt'   => get_the_title()
-							];
-							$case_img = get_the_post_thumbnail( $post->ID, 'full', $default_attr )
-						?>
-						<?php if (!empty($case_img)) : ?>
-							<?= $case_img; ?>
-						<?php else : ?>
-							<picture>
-								<img src="<?= STANDART_DIR; ?>img/other/case.svg" alt="">
-							</picture>
-						<?php endif;?>
-						<?php
-							$categories_case = get_the_terms($post->ID, 'cats_cases');
-
-							if( $categories_case[0] ) {
-								echo '<div class="experts__item-tag tag text text--tiny text--primary text--w-medium text-center">' . $categories_case[0]->name . '</div>';
-							}
-						?>
-					</div>
-					<div class="experts__item-info">
-						<div class="experts__item-name text text--primary text--w-bold">
-							<?php the_title(); ?>
-						</div>
-						<div class="experts__item-position text text--small text--primary text--w-regular">
-							<?php the_field('expert_position'); ?>
-						</div>
-						<?php $expert_case = get_field('expert_case'); ?>
-						<?php if (!empty($expert_case)) : ?>
-							<a href="<?= $expert_case; ?>" class="experts__item-button button button--text">
-								<span>Смотреть кейс</span>
-								<span class="button__icon-wrap">
-		                            <svg width="14" height="14" class="button__icon">
-		                                <use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
-		                            </svg>
-		                        </span>
-							</a>
-						<?php endif; ?>
-					</div>
-				</div>
-			<?php endforeach; ?>
+			<?php get_template_part('template-parts/template', 'case'); ?>
+		<?php endforeach; ?>
 			<?php wp_reset_postdata(); ?>
 		</div>
 	</div>
