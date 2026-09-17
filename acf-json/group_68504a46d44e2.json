@@ -58,6 +58,23 @@
             "allow_in_bindings": 0
         },
         {
+            "key": "field_68ca8c5e6f4b1",
+            "label": "Rutube",
+            "name": "rutube_link",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "allow_in_bindings": 0
+        },
+        {
             "key": "field_6850505f64e1a",
             "label": "E-mail",
             "name": "email_link",
@@ -287,5 +304,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1752767426
+    "modified": 1789603200
 }

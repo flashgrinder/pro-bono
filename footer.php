@@ -81,35 +81,37 @@
 					Контакты
 				</div>
 				<div class="footer__contacts d-flex">
-					<?php $tg_link = get_field('tg_link', 'option'); ?>
-					<?php if (!empty($tg_link)) : ?>
-						<?php
-							$link_url = $tg_link['url'];
-							$link_title = $tg_link['title'];
-							$link_target = $tg_link['target'] ? $tg_link['target'] : '_self';
-						?>
-						<div class="footer__contact">
-							<div class="footer__contact-name text text--small text--primary text--w-regular">
-								Телеграм-канал
-							</div>
-							<a href="<?= esc_url($link_url); ?>"
-							   target="<?= esc_attr($link_target); ?>"
-							   class="footer__contact-link text text--pre-large text--primary text--w-regular link">
-								<?= esc_html($link_title); ?>
-							</a>
-						</div>
-					<?php endif; ?>
-
-					<?php $email_link = get_field('email_link', 'option'); ?>
-					<?php if (!empty($email_link)) : ?>
 					<?php
-						$link_url = $email_link['url'];
-						$link_title = $email_link['title'];
-						$link_target = $email_link['target'] ? $email_link['target'] : '_self';
+						$footer_contacts = [
+							'tg_link' => [
+								'name' => 'Телеграм-канал',
+							],
+							'rutube_link' => [
+								'name' => 'Rutube-канал',
+								'title' => 'Probono300',
+							],
+							'email_link' => [
+								'name' => 'Адрес электронной почты',
+							],
+							'phone_link' => [
+								'name' => 'Номер телефона',
+							],
+						];
+
+						foreach ($footer_contacts as $field_name => $contact) :
+							$link = get_field($field_name, 'option');
+
+							if (empty($link)) {
+								continue;
+							}
+
+							$link_url = $link['url'];
+							$link_title = $contact['title'] ?? $link['title'];
+							$link_target = $link['target'] ? $link['target'] : '_self';
 					?>
 						<div class="footer__contact">
 							<div class="footer__contact-name text text--small text--primary text--w-regular">
-								Адрес электронной почты
+								<?= esc_html($contact['name']); ?>
 							</div>
 							<a href="<?= esc_url($link_url); ?>"
 							   target="<?= esc_attr($link_target); ?>"
@@ -117,26 +119,7 @@
 								<?= esc_html($link_title); ?>
 							</a>
 						</div>
-					<?php endif; ?>
-
-					<?php $phone_link = get_field('phone_link', 'option'); ?>
-					<?php if (!empty($phone_link)) : ?>
-					<?php
-						$link_url = $phone_link['url'];
-						$link_title = $phone_link['title'];
-						$link_target = $phone_link['target'] ? $phone_link['target'] : '_self';
-					?>
-						<div class="footer__contact">
-							<div class="footer__contact-name text text--small text--primary text--w-regular">
-								Номер телефона
-							</div>
-							<a href="<?= esc_url($link_url); ?>"
-							   target="<?= esc_attr($link_target); ?>"
-							   class="footer__contact-link text text--pre-large text--primary text--w-regular link">
-								<?= esc_html($link_title); ?>
-							</a>
-						</div>
-					<?php endif; ?>
+						<?php endforeach; ?>
 				</div>
 			</div>
 			<div class="footer__center">
