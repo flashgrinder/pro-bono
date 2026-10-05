@@ -328,11 +328,20 @@
 	<div class="info__body container">
 		<div class="info__decor-wrap d-flex flex-justify-center flex-align-center">
 			<span class="info-decor__line info-decor__line--left"></span>
-			<a href="https://forms.yandex.ru/u/68244770068ff0a1fac9d30b/" class="info__decor d-flex flex-justify-center flex-align-center" target="_blank">
-				<svg width="20" height="20" class="info__decor-icon">
-					<use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
-				</svg>
-			</a>
+                <?php $link_anketa = get_field('link_anketa', 'option'); ?>
+                <?php if (!empty($link_anketa)) : ?>
+                    <a href="<?=$link_anketa  ?>" class="info__decor d-flex flex-justify-center flex-align-center" target="_blank">
+                        <svg width="20" height="20" class="info__decor-icon">
+                            <use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+                        </svg>
+                    </a>
+                <?php else : ?>
+                    <div class="info__decor d-flex flex-justify-center flex-align-center">
+                        <svg width="20" height="20" class="info__decor-icon">
+                            <use href="<?= STANDART_DIR; ?>img/svgsprite/sprite.symbol.svg#arrow-top-right"></use>
+                        </svg>
+                    </div>
+                <?php endif; ?>
 			<span class="info-decor__line"></span>
 		</div>
 		<h3 class="info__heading title title--big title--w-bold text-center">
