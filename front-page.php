@@ -516,6 +516,39 @@
 </section>
 <?php endif; ?>
 
+<?php if (have_rows('partners')) : ?>
+	<section class="partners" aria-labelledby="partners-heading">
+		<div class="partners__outer container-full">
+			<div class="partners__body container white-bg">
+				<h3 id="partners-heading" class="partners__heading title title--big title--primary title--w-bold">
+					Партнёры
+				</h3>
+				<div class="partners__items">
+					<?php while (have_rows('partners')) : the_row(); ?>
+						<?php
+							$partner_logo = get_sub_field('partner_logo');
+							$partner_link = get_sub_field('partner_link');
+						?>
+						<?php if (!empty($partner_logo)) : ?>
+							<?php if (!empty($partner_link)) : ?>
+								<a class="partners__item" href="<?= esc_url($partner_link); ?>" target="_blank" rel="noopener noreferrer">
+							<?php else : ?>
+								<div class="partners__item">
+							<?php endif; ?>
+								<img class="partners__logo" src="<?= esc_url($partner_logo['url']); ?>" alt="<?= esc_attr($partner_logo['alt'] ?: $partner_logo['title']); ?>">
+							<?php if (!empty($partner_link)) : ?>
+								</a>
+							<?php else : ?>
+								</div>
+							<?php endif; ?>
+						<?php endif; ?>
+					<?php endwhile; ?>
+				</div>
+			</div>
+		</div>
+	</section>
+<?php endif; ?>
+
 <section class="news b-padding-70">
 	<div class="news__body container">
 		<h3 class="news__heading title title--big title--primary title--w-bold title--indent">

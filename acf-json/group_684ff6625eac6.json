@@ -1247,6 +1247,76 @@
             "media_upload": 0,
             "toolbar": "full",
             "delay": 0
+        },
+        {
+            "key": "field_68f0000000001",
+            "label": "Партнёры",
+            "name": "partners",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Добавьте логотип партнёра и, при необходимости, ссылку на его сайт.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Добавить партнёра",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_68f0000000002",
+                    "label": "Логотип",
+                    "name": "partner_logo",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "medium",
+                    "parent_repeater": "field_68f0000000001"
+                },
+                {
+                    "key": "field_68f0000000003",
+                    "label": "Ссылка",
+                    "name": "partner_link",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Если ссылка не указана, логотип будет выведен без ссылки.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_68f0000000001"
+                }
+            ]
         }
     ],
     "location": [
